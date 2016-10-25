@@ -1,0 +1,157 @@
+\documentclass[oneside,letterpaper]{memoir}
+
+\usepackage{citthesis}
+
+\usepackage[T1]{fontenc}
+% Load lmodern for bold \ttfamily
+\usepackage[]{lmodern}
+%\usepackage[lighttt]{lmodern}
+%\usepackage[bitstream-charter]{mathdesign}
+%\usepackage[urw-garamond]{mathdesign}
+\usepackage[sc]{mathpazo}
+%\usepackage{fourier}
+%\usepackage{lmodern}
+
+\usepackage{stmaryrd}
+\usepackage{graphicx}
+
+\usepackage[colorlinks,linkcolor=blue,filecolor=blue,citecolor=blue,urlcolor=blue,backref=page]{hyperref}
+
+%\usepackage{caption}
+%\let\subcaption\undefined
+%\let\subfloat\undefined
+\newsubfloat{figure}
+
+%Todd added for fractions
+\usepackage{xfrac}
+%Todd added this for strikeout \sout{}
+\usepackage[normalem]{ulem}
+%Todd added this for the reference to essence.sv.cmu.edu
+\usepackage{hyperref}
+%Todd added this to fix tables with an H
+\usepackage{float}
+%for no orphan lines
+\usepackage[all]{nowidow}
+ %for lableling a table as a figure
+\usepackage{caption}
+% for ul which allows underlines to be split across a line break
+\usepackage{soul}
+% for rotating a table into landscape
+\usepackage{longtable}
+\usepackage{lscape} 
+
+
+%Todd's commands
+\newcommand{\strikeout}[1]{\sout{#1}}
+\newcommand{\quotes}[1]{``#1''}
+\newcommand{\participantQuote}[1]{\textit{``#1''}}
+\newcommand{\singleQuote}[1]{`#1'}
+\newcommand{\emphasis}[1]{\emph{#1}}
+\newcommand{\ignore}[1]{}
+
+\newcommand{\oneColumnWidth}{3.4in}
+\newcommand{\twoColumnWidth}{6.3in}
+
+\newcommand{\numberOfObservedProjects}{eight}
+\newcommand{\numberOfInterviews}{28}
+
+\setauthor{Todd Sedano}
+%\settitle{Empirical Study of Iterative Software Development in Academia and Industry: Effectiveness, Optimization, and Extension of the Essence Kernel}
+% \settitle{Empirical Study of Iterative Software Development in Industry}
+\settitle{Iterating on Iterative Software Development: Evolving Extreme Programming}
+
+\doctors
+\setchair{Dr.\  C\'ecile P\'eraire}
+\setdept{Electrical and Computer Engineering}
+\setdegrees{B.S., Mathematics and Computer Science, Carnegie Mellon University\\
+M.S., Software Engineering, Carnegie Mellon University}
+\setdefdate{May 2017}
+\setgraddate{May 2017}
+\setcopyyear{2017}
+
+\begin{document}
+
+\frontmatter
+
+\thetitlepage
+\copyrightpage
+
+\section*{Acknowledgements}
+I want to thank my committee members for their guidance and expertise: my chair
+ C\'ecile P\'eraire as well as Paul Ralph, Martin Griss, and To Be Determined. 
+
+I wish to thank the leadership of Pivotal for making this research possible; thank you Rob Mee, David Goudreau, Ryan Richard, and Zach Larson. Thank you to Karina Sils for creating Figure \ref{PlannedDeveloperStaffing} and Figure \ref{DeveloperStaffing} using Sketch. Thanks to Ben Christel for his assistance in sorting retro topics and helping with the initial analysis for Software Engineering Waste.
+
+\newpage
+\section*{Abstract}
+\textit{Context:} Software development is a complex socio-technical endeavor that involves coordinating different disciplines and skill sets. Practitioners experiment with and adopt processes and practices with a goal of making their work more effective.
+
+\textit{Objective:} The purpose of this research is to observe, describe, and analyze software development processes and practices in an industrial setting. Our goal is to generate a descriptive theory of software engineering development, which is rooted in empirical data.
+
+\textit{Method:} Following Constructivist Grounded Theory, I conducted a two-year five-month participant-observation of several software development projects at Pivotal, a software development company. I interviewed 26 software engineers, interaction designers, and product managers, and analyzed one  year  of  retrospection  topics.  I  iterated  between  data collection, data analysis  and  theoretical  sampling  until achieving theoretical  saturation and generating a descriptive theory.
+
+\textit{Results:} 1)  This  research  introduces  a  descriptive  theory  of  Sustainable  Software Development.  The theory encompasses principles, policies, and practices aiming at removing knowledge silos and improving code quality (including discoverability and readability), hence leading to development sustainability. 2) At the heart of Sustainable Software Development is team code ownership. This research widens the current definition and understanding of team code ownership. It identifies five factors that affect ownership.  Developers achieve higher team code ownership when they understand the system context, have contributed to the code in question, perceive code quality as high, believe the product will satisfy the user needs, and perceive high team  cohesion.   3)  This  research  introduces  the  first  evidence-based  waste  taxonomy,  identifying  eight wastes along with causes and tensions within wastes. It also provides a comparison with the taxonomy of wastes found in Lean Software Development.
+
+\textit{Limitations:} While the results are highly relevant to the observed company, Pivotal, the outcomes might not apply to organizations with different software development cultures.
+
+\textit{Conclusion:} 1) The Sustainable Software Development theory refines and extends our understanding of Extreme Programming by adding new principles, policies, and practices (including Overlapping Pair Rotation) and aligning them with the business goal of sustainability. 2) Team code ownership is rooted in numerous cognitive, emotional, contextual and technical factors and cannot be achieved simply by policy. 3) The waste taxonomy serves as a starting point for waste identification and elimination. Comparing this taxonomy to Lean Software Development’s list of wastes revealed our taxonomy’s parsimony and expressiveness while illustrating wastes not covered by previous work. 
+
+Introducing feedback cycles is one method to identify and remove waste, enabling software teams to iterate on iterative software development.  This research reveals team code ownership as the heart of collaborative software delivery. 
+
+
+%Given the plethora of practices and methods, the Software Engineering Method and Theory (SEMAT) community created the Essence kernel as a unifying framework for describing and analyzing software engineering endeavors. 
+
+%My research goal is to evaluate the Essence kernel for practical use on academic and industrial software development projects, identify issues, and research solutions grounded in empirical evidence. 
+
+%At Carnegie Mellon University in Silicon Valley, I conducted a field study with masters of science in software engineering students as they completed team-based capstone projects using the Essence kernel. During weekly Essence Reflection meetings, the Essence kernel checklists helped students identify relevant goals to achieve, which enabled the team to steer the project to higher states. The student teams found value during project inception. However, teams found less value during the construction phase of iterative projects, as the Essence kernel offered few new goals hence loosing its ability to help the team steer the project. The original Essence kernel is method agnostic and does not directly support iterative development. Since most of agile software development occurs via iterative software development, adapting the Essence kernel to have goals for an iterative construction phase would increase its value to software development teams.
+
+%Following these results in academia, my objective is to continue my research in industry, with a focus on the practices at Pivotal. One of my next goals is to generate a process model that accurately describes iterative software projects at Pivotal. My plan is to conduct participant-observation of several software development projects at Pivotal. I will interview many software engineers and product managers to collect additional data. I'll iterate my research by incorporating this feedback. My expected result is a process model grounded in empirical data that supports iterative software development. 
+
+\newpage
+\tableofcontents
+\listoftables
+\listoffigures
+
+\mainmatter
+
+
+%%
+%% Start line numbering here if you want
+%%
+%%\linenumbers
+
+%note that import will do a clearfix
+% \input{essence-reflection-meetings}
+% \input{essence-steering}
+% \input{essence-green-lighting}
+
+\input{grounded-theory-do-not-edit}
+% \input{state-of-the-art}
+\input{research-method}
+\input{sustainable-software-development}
+\input{team-code-ownership}
+\input{software-engineering-waste-do-not-edit}
+\input{conclusion-do-not-edit}
+
+\appendix
+\input{waste-chain-of-evidence}
+
+\chapter{Interview Drawings and Partial Transcriptions}
+I asked many of the interviewees an open ended drawing question to begin a conversation by eliciting the their perspective on a topic. Here I include the diagrams with an abridged interview transcript where the interviewee describes their drawing.
+\input{interviews/abridged_interview_2015_05_29}
+\input{interviews/abridged_interview_2015_08_12_anchor}
+\input{interviews/abridged_interview_2015_08_12_pm}
+\input{interviews/abridged_interview_2016_01_08}
+\input{interviews/abridged_interviews}
+
+
+
+% \input{interviews}
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography}
+
+\backmatter
+
+
+\end{document}
