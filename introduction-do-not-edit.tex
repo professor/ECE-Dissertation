@@ -1,0 +1,113 @@
+% Sample apostrophy's to remove team's 
+
+
+\chapter{Introduction}
+\label{IntroductionChapter}
+
+
+Imagine that you are a director of a multi-million dollar software development business unit managing 100 software engineers and 20 product managers. You have 25 teams working on various interrelated software products. The entire organization balances solving customer escalations from installed products, adding new features to the next release, and handling maintenance chores such as routinely upgrading dependencies. Your predecessor accrued significant tech debt and it will take years to pay it down. There's never enough time to get it all done. 
+
+
+In the middle of all this, there is challenging to manage team. Team Competent. The team is composed of highly competent software engineers. They write clean code that is well tested. The test suite is slow, but it is thorough and catches issues before they get to the customer. In fact, there has never been a serious customer escalation.
+
+
+The team resists collaborating with others. The team has developed an “us versus them” or “us versus management” attitude. The rest of your organization does not want to work with them. 
+Their product manager would like them to be more in the office to increase the product manager's collaboration with the team. While the other teams are expected to be in during core office hours, this team has an attitude that as long as the work gets done, regardless of where they are when they do it, then why should anyone care. The product manager is growing frustrated with the team's attitude about features. The product manager would like to discuss how the feature will work, yet the engineers want to just own the problem and deliver something that works. However, when they deliver code, it sometimes does not work the way the customer expects or it is not solving the customer's needs. When asked, \quotes{how does the customer use the flux capacitor,} the engineers respond, \quotes{we do not know what customers want.} Recently, the team's productivity has decreased. The team all came together from a previous company, and you are worried that when one of them leaves, all of them will leave the company.
+
+
+How did software development come to this? Since software development is a socio-technical activity, why is collaboration so difficult? Why is software development so hard?  
+
+
+How can we build teams that embrace collaboration, help others solve the problems, and train others to do their work?
+
+
+The complexities of software development emerge, in part, due to uncertainty about product to market fit resulting in changing features, constantly changing dependent technologies, the baggage of maintaining legacy code, the lack of physical constraints for software, the absence of visible progress, and people write software. Teams require coordination and collaboration. The team building process becomes a part of building high performing teams. Unlike assembly line work, engineers are not fungible. Even if two engineers have the same competency in a set of technologies, their individual temperaments and personalities affect team dynamics. Building software is challenging. 
+
+
+While it appears that any set of processes will work for very small teams in the short term, creating an engineering culture that will deliver value week to week, month to month regardless of team disruption and changing circumstances is no easy task. Any company that achieves proficiency in software development becomes an interesting research opportunity. We choose Pivotal because 1) it is successful; 2) it is unusual in its continued use and evolution of extreme programming \cite{BeckExtremeProgramming2004}; 3) it is accessible and cooperative with research. Chapter \ref{ResearchContextChapter} describes Pivotal, our research context. 
+
+
+In order to understand how Pivotal develops software, we employed Constructivist Grounded Theory as the research method. Chapter \ref{ConstructivistGroundedTheoryChapter} describes this process. Chapter \ref{ResearchMethodChapter} describes our specific use of Grounded Theory including the data sources. This study had an unusually ambitious scope. In many Grounded Theory studies, the researcher spends a few weeks interviewing participants and analyzing data. Here, one researcher spent two years working with participants 5 days per week on \numberOfObservedProjects{} teams. 
+
+
+Applying Grounded Theory at Pivotal, unearthed the theory of sustainable software development, an explanation on how Pivotal teams are able to thrive through team disruption and successfully deliver software to their stakeholders. Chapter \ref{SustainableSoftwareDevelopmentChapter} describes the theory's principles, policies, and practices and explains that by actively removing knowledge silos and caretaking the code teams survive disruption.  At the heart of the Pivotal process is team code ownership. Many of Pivotal's practices have the effect of promoting team code ownership while removing individual code ownership. Chapter \ref{TeamCodeOwnershipChapter} identifies five factors that affect the team's sense of code ownership and explains why psychological ownership causes
+ some individuals to struggle with the transition from individual code ownership to team code ownership. 
+
+
+The Grounded Theory study also identified that Pivotal teams actively identify and try to remove waste. Since software development is an organic and messy problem space, finding all kinds of waste is no surprise.  Chapter \ref{SoftwareEngineeringWasteChapter} conducts the first empirical research study into a waste taxonomy and contrasts it with Lean Software Development's waste taxonomy. Some of the wastes types, such as “unnecessary cognitive effort,” are rarely salient unless one is specifically looking for them. 
+
+Chapter \ref{ConclusionChapter} discusses future research and concludes the research study. 
+Appendix \ref{AppendixChainOfEvidence} provides the chain of evidence for the waste taxonomy after iteratively applying constant comparison. 
+
+
+Appendix \ref{AppendixInterviews} showcases interview data. The initial interviews began with the question, \quotes{Draw your view of Pivotal's software development process}. A sample of responses and the interviews descriptions of the drawing are included. Once team code ownership emerged as a core category, many interviews began with the question, \quotes{Draw how you feel about the code.} When the pictures are not obvious, some brief narrative is included.
+
+
+% opportunities to remove waste are apparent even for companies that actively remove waste. 
+
+
+\chapter{Research Context}
+\label{ResearchContextChapter}
+
+
+\subsection{Pivotal Labs}
+Pivotal Labs is a division of Pivotal\textemdash a large American software company (with 17 offices around the world). Pivotal Labs provides teams of agile developers, product managers, and interaction designers to other firms. Its mission is not only to deliver highly-crafted software products but also to help transform clients' engineering cultures. To change the client's development process, Pivotal combines the client's software engineers with Pivotal's engineers at a Pivotal office where they can experience Extreme Programming \cite{BeckExtremeProgramming2004} in an environment conducive to agile development. 
+
+
+Typical teams include six developers, one interaction designer, and a product manager. The largest project in the history of the Palo Alto office had 28 developers while the smallest had two. Larger projects are organized into smaller coordinating teams with one product manager per team and one or two interaction designers per team.
+
+
+Interaction designers identify user needs predominately through user interviews; create and validate user experience with mockups; determine the visual design of a product; and support engineering during implementation. Product managers are responsible for identifying and prioritizing features, converting features into stories, prioritizing stories in a backlog, and communicating the stories to the engineers. Software engineers implement the solution. 
+
+
+Pivotal Labs has followed Extreme Programming \cite{BeckExtremeProgramming2004} since the late 1990's. While each team autonomously decides what is best for each project, the company culture strongly suggests following all of the core practices of Extreme Programming, including pair programming, test-driven development, weekly retrospectives, daily stand-ups, a prioritized backlog, and team code ownership. We only observed teams at Pivotal Labs. Other teams, especially teams in other divisions, might have a different culture and follow different software practices.
+
+
+\subsection{Software Development Culture}
+When compared to other companies, the software development culture is marked with a high degree of collaboration and constant improvement.
+\textbf{Collaboration}
+The culture promotes collaboration by encouraging asking for help, interacting across disciplines, creating an ego-less environment, and rotating who works on each part of the system. Experienced engineers model the culture so that new Pivotal or client engineers can see what normal looks like.
+
+
+Since asking for help is a normal part of the day, interruptions are welcomed. One pair asking another pair for help is a sign of respect. Engineers enjoy that someone values their opinion. On large teams, it is possible for one pair to be interrupted too frequently. When the interruptions consume too much time, making forward progress on a story becomes challenging. 
+
+
+Teams are cross-functional teams or balanced teams with software engineers, product managers, and interaction designers on each team. 
+
+
+The dynamic arising from pair programming grows out to the team. A healthy pair programming dynamics is one comprised of listening, empathy, teaching, and learning. These then transfer to an individual's interactions with the rest of the team. The pair works on everything together from software development, asking for help, taking breaks, and attending meetings. If an individual is pulled into a project related meeting, they take their pair with them. Engineers new to pair programming may be surprised when both of them go ask someone else for help. Since the team desires to spread knowledge and context to the entire team, it is prefered for both to be involved instead of having someone solo.  Pair programming can foster good habits that serve the entire team well.
+
+
+Egoless culture is promoted through a, b, c. Pivotal has a flat engineering culture. While the HR system has engineering levels for comparing compensations across the organization, in day to day practice everyone is on the same level. There is discussion or awareness about job titles or seniority. The team wants the best solution for the product regardless of who presents ideas. It's a meritocracy. The rotation of roles also reinforces an egoless organization, an engineer leading a project today will be an individual contributor on the next project. Side coaching? Team code ownership (Chapter \ref{TeamCodeOwnershipChapter}) combined with overlapping pair rotation practice (Section \ref{OverlappingPairRotationSection}) helps remove issues individual psychological ownership and promote collective ownership.
+
+
+
+
+\textbf{Constant improvement}
+The culture embodies constant improvement through tight feedback loops. The feedback loops help the teams identify and remove waste such as those identified in Chapter \ref{SoftwareEngineeringWasteChapter}. T
+Observed feedback loops at Pivotal include
+\begin{itemize}
+  \item Daily standups
+  \item Weekly retros
+  \item Daily pairing feedback for improving personal interactions
+  \item User research for identifying user persona and user needs
+  \item User validation for validating product or features
+  \item Usability testing for validating sketches
+  \item Product managers accepting or rejecting a story for validating development work
+  \item Tests validate successful code refactorings 
+  \item Difficult to change code reveals design problems
+  \item Difficult to test component
+  \item Rework as feedback for features was not properly described or not properly implemented
+  \item Bugs as feedback about development process or testing strategy 
+\end{itemize}
+
+
+Ideal feedback is provided in a timely manner so that the individual or team learn from the situation, and see the most benefit from the course correction. Delaying the course correction delays the benefits. One team had a ten minute build which periodically annoyed them and slowed their development workflow down. On the last week of the project, the team examined the slowness of the build and realized that a simple resequencing of the tests could bring it down to three minutes. The pair lamented, \quotes{why didn't we do this sooner?} as they could have benefitted from the results throughout the project. 
+
+
+On a typical project, there often are many things that can be improved, and the art is in prioritizing which pain points to address first.  
+
+
+The weekly retro becomes a \quotes{catch-all} event where any team issues could be discussed. Pivotal retros are open, cathartic experiences for the team, managed with strong facilitators. 
+
+
