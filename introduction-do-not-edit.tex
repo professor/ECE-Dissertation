@@ -1,4 +1,33 @@
-% Sample apostrophy's to remove team's 
+% Sample apostrophy’s to remove team’s 
+
+
+\newpage
+\section*{Abstract}
+\textit{Context:} Software development is a complex socio-technical endeavor that involves coordinating different disciplines and skill sets. Practitioners experiment with and adopt processes and practices with a goal of making their work more effective.
+
+
+\textit{Objective:} The purpose of this research is to observe, describe, and analyze software development processes and practices in an industrial setting. Our goal is to generate a descriptive theory of software engineering development, which is rooted in empirical data.
+
+
+\textit{Method:} Following Constructivist Grounded Theory, we conducted a two-year five-month participant-observation of \numberOfObservedProjects{} software development projects at Pivotal, a software development company. We interviewed \numberOfInterviews{} software engineers, interaction designers, and product managers, and analyzed one year of retrospection topics. We iterated between data collection, data analysis and theoretical sampling until achieving theoretical saturation and generating a descriptive theory.
+
+
+\textit{Results:} 1) This research introduces a descriptive theory of Sustainable Software Development. The theory encompasses principles, policies, and practices aiming at removing knowledge silos and improving code quality (including discoverability and readability), hence leading to development sustainability. 2) At the heart of Sustainable Software Development is team code ownership. This research widens the current definition and understanding of team code ownership. It identifies five factors that affect ownership. Developers achieve higher team code ownership when they understand the system context, have contributed to the code in question, perceive code quality as high, believe the product will satisfy the user needs, and perceive high team cohesion. 3) This research introduces the first evidence-based waste taxonomy, identifying eight wastes along with causes and tensions within wastes. It also provides a comparison with the taxonomy of wastes found in Lean Software Development.
+
+
+\textit{Limitations:} While the results are highly relevant to the observed company, Pivotal, the outcomes might not apply to organizations with different software development cultures.
+
+
+\textit{Conclusion:} The Sustainable Software Development theory refines and extends our understanding of Extreme Programming by adding new principles, policies, and practices (including Overlapping Pair Rotation) and aligning them with the business goal of sustainability. One key aspect of the theory is team code ownership, which is rooted in numerous cognitive, emotional, contextual and technical factors and cannot be achieved simply by policy. Another key dimension is waste identification and elimination, which has led to a new taxonomy of waste. Comparing this taxonomy to Lean Software Development’s list of wastes revealed our taxonomy’s parsimony and expressiveness while illustrating wastes not covered by previous work. Overall, this research contributes to the field of software engineering by providing new insights, rooted in empirical data, into how a software organization leverages and extends Extreme Programming to achieve software sustainability.
+
+
+
+
+
+
+
+
+
 
 
 
@@ -8,28 +37,28 @@
 \label{IntroductionChapter}
 
 
-Imagine that you are a Vice President of a multi-million dollar software development business unit managing 100 software engineers and 20 product managers. You have 25 teams working on various interrelated software products. The entire organization balances 1) adding new features to the next release, 2) solving customer escalations from installed products, and 3) handling maintenance chores such as routinely upgrading dependencies. Your predecessor accrued significant tech debt. It will take years to pay it down. There is never enough time to get it all done. 
+Imagine that you are a Vice President of a multi-million dollar software development business unit managing 100 software engineers and 20 product managers. You have 25 teams working on various interrelated software products. The entire organization balances 1) adding new features to the next release, 2) solving customer escalations from installed products, and 3) handling maintenance chores such as routinely upgrading dependencies. Over the last few releases, you have seen a continuing decrease in your teams’ productivity, and a steep increase in complaints from customers related to product quality. And somehow, there is never enough time to address those challenges.
 
 
-In the middle of all this, one team is challenging to manage, Team Competent. The team is composed of highly skilled software engineers. They write well tested, clean code. The test suite is slow, but is thorough and catches issues before they get to the customer. In fact, there has never been a serious customer escalation.
+In the middle of all this, one team is extremely difficult  to manage. The team is composed of highly skilled software engineers. They write well tested, clean code. The test suite is slow, but is thorough and catches issues before they get to the customer. 
 
 
-The team resists collaborating with others. The team developed an \quotes{us versus them} or \quotes{us versus management} attitude. The rest of your organization does not want to work with them. Their product manager would like the team to be in the office more to increase the product manager’s collaboration with the team. While the organization expects teams to be in the office during core business hours, this team believes that as long as the work gets done, why should anyone care where or when they accomplish the work. The product manager is growing frustrated with the team’s attitude about features. The product manager would like to discuss how the feature will work, yet the engineers want just to own the problem and deliver something that works. Sometimes when they deliver code, the implementation does not solve the customer’s needs or works the way the customer expects. When asked, \quotes{how does the customer use the flux capacitor?} the engineers respond, \quotes{we do not know what the customers want.} Recently, the team’s productivity has decreased. The team all came together from a previous company, and you are worried that when one of them leaves, all of them will exit the company.
+The team resists collaborating with other teams or customers. The team developed an \quotes{us versus them} or \quotes{us versus management} attitude. Their product manager would like the team to be in the office more often to increase collaboration. While the organization expects teams to be in the office during core business hours, this team believes that as long as the work gets done, nobody should care where or when they accomplish the work. The product manager is growing frustrated with the team’s attitude about features. Their focus appears to be on delivering something that works without truly understanding how the features should work. As a result, when they deliver code, the implementation does not always solve the customer’s needs or works the way the customer expects. 
 
 
-How did software development come to this? Why is software development so hard? Since software development is a socio-technical activity, why is collaboration so difficult? How can we build teams that embrace collaboration, help others solve the problems, and train others to do their work?
+How did software development come to this? Why is software development so hard? Why is collaboration so difficult? How can we build teams that embrace collaboration, help others solve the problems, and train others to do their work?
 
 
-The complexities of software development emerge, in part, due to 1) uncertainty about product to market fit resulting in changing features, 2) constantly changing dependent technologies, 3) the baggage of maintaining legacy code, 4) the lack of physical constraints resulting in boundless solutions, 5) the absence of visible progress, and 6) people write software. Teams require coordination and collaboration. Building high performing teams requires effort and care. Unlike assembly line work, engineers are not fungible. Even if two engineers have the same competency in a set of technologies, their individual temperaments and personalities affect team dynamics. Building software is challenging. 
+The complexities of software development emerge, in part, due to 1) uncertainty about product to market fit resulting in changes to the feature set during and after development, 2) constantly changing dependent technologies, 3) the challenge of maintaining legacy code, 4) the lack of physical constraints resulting in boundless solutions, 5) measuring progress is challenging because project scope is a moving target and bringing visibility to an intangible process is difficult, and 6) software is written by people having various expertises as well as social and technical skills. Teams require coordination and collaboration. Building high performing teams requires effort and care. Unlike assembly line work, engineers are not fungible. Even if two engineers have the same competency in a set of technologies, their individual temperaments and personalities affect team dynamics. Building software is challenging. 
 
 
-While it appears that any set of processes will work for tiny teams in the short term, creating an engineering culture that will deliver value week after week, month after month regardless of team disruption and changing circumstances is no easy task. Any company that achieves proficiency in software development becomes an interesting research opportunity. We choose Pivotal because 1) it is successful; 2) it is unusual in its continued use and evolution of Extreme Programming \cite{BeckExtremeProgramming2004}; 3) it is accessible and cooperative with research. Chapter \ref{ResearchContextChapter} describes Pivotal, our research context. 
+While it appears that any set of processes will work for tiny teams in the short term, creating an engineering culture where large teams deliver value week after week, month after month regardless of team disruption and changing circumstances is no easy task. Any company that achieves proficiency in software development becomes an interesting research opportunity. We choose Pivotal because it is successful; it is unusual in its continued use and evolution of Extreme Programming \cite{BeckExtremeProgramming2004};  it is accessible and cooperative with research. Chapter \ref{ResearchContextChapter} describes Pivotal, our research context. 
 
 
 In order to understand how Pivotal develops software, we employed Constructivist Grounded Theory as the research method. Chapter \ref{ConstructivistGroundedTheoryChapter} describes Constructivist Grounded Theory and Chapter \ref{ResearchMethodChapter} describes our data sources and particular use of Grounded Theory. This study had an unusually ambitious scope. In many Grounded Theory studies, the researcher spends a few weeks interviewing participants and analyzing data. Here, one researcher spent \durationOfResearchStudyPlural{} working with participants 5 days per week on \numberOfObservedProjects{} teams. 
 
 
-Applying Grounded Theory at Pivotal, unearthed the theory of Sustainable Software Development, an explanation on how Pivotal teams can thrive despite team disruption and successfully deliver software to their stakeholders. Chapter \ref{SustainableSoftwareDevelopmentChapter} describes the theory’s principles, policies, and practices. The theory explains that by actively removing knowledge silos and caretaking the code teams survive disruption. At the heart of the Pivotal process is team code ownership. Many of Pivotal’s practices have the effect of promoting team code ownership while removing individual code ownership. Chapter \ref{TeamCodeOwnershipChapter} identifies five factors that affect the team’s sense of code ownership and explains why psychological ownership causes some engineers to struggle with the transition from individual code ownership to team code ownership. 
+Applying Grounded Theory at Pivotal unearthed the theory of Sustainable Software Development, an explanation on how Pivotal teams can thrive despite team disruption and successfully deliver software to their stakeholders. Chapter \ref{SustainableSoftwareDevelopmentChapter} describes the theory’s principles, policies, and practices. The theory explains how teams survive disruption by actively removing knowledge silos and caretaking the code. At the heart of the Pivotal process is team code ownership. Many of Pivotal’s practices have the effect of promoting team code ownership while removing individual code ownership. Chapter \ref{TeamCodeOwnershipChapter} identifies five factors that affect the team’s sense of code ownership and explains why psychological ownership causes some engineers to struggle with the transition from individual code ownership to team code ownership. 
 
 
 The Grounded Theory study also identified that Pivotal teams actively detect and remove waste. Since software development is an organic and messy problem space, finding all kinds of waste is no surprise. Chapter \ref{SoftwareEngineeringWasteChapter} conducts the first empirical research study into a waste taxonomy and contrasts it with Lean Software Development’s waste taxonomy. \sout{Some of the wastes types, such as \quotes{unnecessary cognitive effort,} are rarely salient unless one is specifically looking for them.}
@@ -45,6 +74,144 @@ Appendix \ref{AppendixInterviews} showcases interview data. The initial intervie
 
 
 % opportunities to remove waste are apparent even for companies that actively remove waste. 
+
+
+\chapter{Extreme Programming}
+Extreme Programming is characterized by a set of values, principles, and practices. When transitioning to Extreme Programming, Beck recommends adopting the primary practices first. 
+\section{Values}
+\textbf{Communication:} Extreme programming is a collaborative endeavor with communication frequently happening. Teams prefer open and transparent communication. 
+\quotes{You can listen to people who have had similar problems in the past} \cite{BeckExtremeProgramming2004}. When combined with the reflective principle, the team can ask \quotes {what communication do you need to keep yourself out of this trouble in the future?} \cite{BeckExtremeProgramming2004}
+
+
+\textbf{Simplicity:} The team strives to \quotes{make a system simple enough to gracefully solve only today’s problem} \cite{BeckExtremeProgramming2004}. Teams prefer simpler solutions to more complex solutions. Simpler solutions often take more work to discover and implement than complex solutions, but simpler solutions often require less communication than complex solutions.
+
+
+
+
+
+
+
+
+
+
+\textbf{Feedback:} Feedback provides an opportunity for the team to respond to changing circumstances in the marketplace, in the product, in the team, and with the development process. Change requires feedback. In order for continuous improvement to work, the team decides to collect feedback at multiple frequencies and at multiple levels. The team prefers improvement over expecting perfection. Teams attempt to shorten the feedback cycle so that the team can respond sooner rather than later.
+
+
+\textbf{Courage:} \quotes{Courage is effective action in the face of fear}   \cite{BeckExtremeProgramming2004}. Sometimes it takes courage to make the needed change. Messy code will remain messy unless someone has the courage to make it better. With change, the team needs to accept the risk that the system may break. The individual considers the consequences before making changes. When the team knows the problem, courage is a bias to action. When the team does not know the underlying problem, courage may be patience. 
+
+
+\textbf{Respect:} Collaborative software development is founded on respect. Team members decide to respect each other. \quotes{If members of a team don’t care about each other and what they are doing, XP won’t work} \cite{BeckExtremeProgramming2004}.
+
+
+\textbf{Others:} Teams may adopt additional values and align their practices around the values. 
+
+
+\section{Principles}
+\textbf{Humanity:} The practices that a team follows need to satisfy human needs. Alternative software development practices may not respect psychological needs. In this case, a practice may grind away at an individual’s humanity \cite{BeckExtremeProgramming2004}. Beck lists fundamental needs as basic safety, accomplishment, belonging, growth, and intimacy \cite{BeckExtremeProgramming2004}. Team software development balances the needs of the individual with the needs of the team. 
+
+
+\textbf{Economics:} People buying the product fuels the business. The practices that a team follows need to balance business needs with technical needs\quotes {Software development is more valuable when it earns money sooner and spends money later} \cite{BeckExtremeProgramming2004}. Incremental design and incremental delivery allows the team to release earlier and delay expenses until later. Avoid building a \quotes{perfect} product that one wants to buy.
+
+
+\textbf{Mutual Benefit:} The practices that a team follows need to find solutions that benefit everyone involved. A practice that does not benefit the team now is not mutually beneficial, e.g. writing documentation for a faceless maintenance team. Mutual beneficial practices benefit people now and the future. 
+
+
+\textbf{Self-Similarity:} Try applying solutions that work in one context to another context. Beck sees similarity in listing themes for a quarter, addressing stories in a week, writing tests for a story.
+
+
+\textbf{Improvement:} Teams benefit from constant improvement. The practices that a team follows evolve and improve over time. The point of XP is \quotes{excellence in software development through improvement} \cite{BeckExtremeProgramming2004}. Starting is prefered to waiting for perfection. 
+
+
+\textbf{Diversity:} Multiple perspectives provides richer solutions. \quotes{Two ideas about a design present an opportunity, not a problem}  \cite{BeckExtremeProgramming2004}. The practices that a team follows should resolve conflict productively. Teams benefit from diversity of skills, perspectives, attitudes, and experiences.
+
+
+\textbf{Reflection:} Teams reflect on how and why they are working. The practices that a team follows should enable reflection at different frequencies and multiple levels. Mistakes are seen as opportunities for growth.
+
+
+\textbf{Flow:} \quotes{Flow in software development is delivering a steady flow of valuable software by engaging in all the activities of development simultaneously}  \cite{BeckExtremeProgramming2004}. The practices that a team follows should decrease batch sizes to enhance flow. Teams want a steady stream of work moving through the system. The ideal \quotes{batch size} is one story per developer. Anything that interrupts the stream of work needs removing. 
+
+
+\textbf{Opportunity:} The practices that a team follows need to frame problems as opportunities. A team \quotes{playing it safe} will make less mistakes but also move slower than needed.
+
+
+\textbf{Redundancy:} \quotes{The critical, difficult problems in software development should be solved several different ways} \cite{BeckExtremeProgramming2004}. The practices that a team follows should address diffult problems in mulpitle ways. For example, XP handles the critical, difficult problem of defects with \quotes{pair programming, continuous integration, sitting together, real customer involvement, and daily deployment}  \cite{BeckExtremeProgramming2004}. 
+
+
+% The team needs to continue in spite of team disruption. Spreading knowledge around the team helps it survive through churn. This enables people to go on vacation whenever needed.
+
+
+\textbf{Failure:}
+
+
+\textbf{Quality:}
+
+
+
+
+\textbf{Baby Steps:} Start with the simplest smallest change possible and grow from there
+
+
+\textbf{Accepted Responsibility:} The team is responsible for the system. 
+
+
+
+
+People tend to act as if everyone else was like them with similar preferences. People are different and the
+\quotes{If you want to travel fast, travel alone. If you want to travel far, travel in a group.}
+
+
+\section{Primary Practices}
+\textbf{Sit Together:}
+\textbf{Whole Team:}
+\textbf{Informative Workspace:}
+\textbf{Energized Work:}
+\textbf{Pair Programming:}
+\textbf{Stories:}
+\textbf{Weekly Cycle:}
+\textbf{Quarterly Cycle:}
+\textbf{Slack:}
+\textbf{Ten-minute Build:}
+\textbf{Continuous Integration:}
+\textbf{Test-First Programming:}
+\textbf{Incremental Design:}
+
+
+
+
+
+
+
+
+\section{Corollary Practices}
+\textbf{Real Customer Involvement:}
+\textbf{Incremental Deployment:}
+\textbf{Team Continuity:}
+\textbf{Shrinking Teams:}
+\textbf{Root-cause analysis:}
+\textbf{Shared Code:}
+\textbf{Code and Tests:}
+\textbf{Single Code Base (branches live a few hours at most):}
+\textbf{Daily Deployment:}
+\textbf{Negotiated Scope Contract:}
+\textbf{Pay-per-use:}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \chapter{Research Context}
@@ -64,34 +231,68 @@ Interaction designers identify user needs predominately through user interviews;
 Pivotal Labs has followed Extreme Programming \cite{BeckExtremeProgramming2004} since the late 1990's. While each team autonomously decides what is best for each project, the company culture strongly suggests following all of the core practices of Extreme Programming, including pair programming, test-driven development, weekly retrospectives, daily stand-ups, a prioritized backlog, and team code ownership. We only observed teams at Pivotal Labs. Other teams, especially teams in other divisions, might have a different culture and follow different software practices.
 
 
+\section{Day in the Life}
+Pivotal provides breakfast to promote engineers starting the day at the same time. Many engineers socialize with their coworkers while eating breakfast. 
+
+
+Office stand-up begins at 9:06 am. Everyone gathers around in a large circle. The stand-up covers \quotes{new faces,} \quotes{helps,} \quotes{interestings,} and \quotes{events.} The office stand-up lasts a few minutes. The two people running stand-up send an email to the company with a summary of the brief meeting. People then disperse for their team’s stand-ups.
+
+
+Team stand-ups provide a synchronization point for the team. Small teams (under eight people) typically will review what each individual accomplished yesterday and discuss any blockers to finishing the work. Large teams discuss \quotes{interestings} and \quotes{helps.} Some teams use a whiteboard to track \quotes{parking lot} issues (items needing discussion during stand-up). After team stand-up, the engineers then decide \quotes{pairing}, who will pair program with who. 
+
+
+The team then determines which pairs will use which computer. If there is work already in progress, the pair working on that work will use that machine. The development environments configured to be identical. Pairing continues until 12:30 pm when the team takes a lunch break. After lunch, pairing continues until 6:00 pm. 
+
+
+While coding, the developers follow Test Driven Development (or Behavior Driven Development.) Tests are written first before determining the design or writing code. A failing test provides the developers with a short term goal. The rhythm is to start a story, refactor if necessary, write a small failing test, write just enough code to get the test to pass, refactor if necessary, and repeat by writing a small failing test. The ideal flow is quick, short cycles of Test Driven Development. When a pair finishes their work, they start the next story at the top of the backlog. 
+
+
+The product manager determines the features and the sequence of stories. The prioritization is kept in a backlog. The product manager decides \quotes{what} the product should do. The engineers determine the implementation details, \quotes{how} the code should be written to accomplish the task in the story. The product manager changes the direction of the product at any point in time by resequencing the backlog. The product manager does not change any \quotes{in-flight} stories (stories that the developers are working on.)
+
+
+During each week, the team holds an iteration planning meeting. The product manager and designer communicate to the engineers the upcoming work, building a shared understanding of the stories. The engineers communicate to the product manager the complexity and risk associated with each story.
+
+
+At the end of each week, the team holds a retrospection meeting to examine what is working well for the team, what needs improvement, and determine any action items to accomplish the identified improvements.
+
+
+
+
+
+
 \section{Software Development Culture}
-When compared to other companies, Pivotal’s software development culture is marked by a high degree of collaboration and constant improvement.
+\sout{When compared to other companies, Pivotal’s software development culture is marked by a high degree of collaboration and constant improvement.}
 
 
 \subsection{Collaboration}
-The culture promotes collaboration by encouraging asking for help, interacting across disciplines, creating an ego-less environment, rotating who works on each part of the system, and pair programming. Experienced engineers model the culture so that new Pivotal or client engineers learn a new way of working.
+\sout{The culture promotes collaboration by preferring synchronous communication, encouraging asking for help, interacting across disciplines, creating an ego-less environment, enabling team code ownership, rotating who works on each part of the system, and pair programming. Experienced engineers model the culture so that new Pivotal or client engineers learn a new way of working.}
 
 
-Since \textit{asking for help} is a regular part of the day, welcoming interruptions is desirable. Asking another pair for help is a sign of respect as engineers enjoy that someone values their opinion. On teams with 10 or more engineers, it is possible for one pair to be interrupted too frequently. When the interruptions consume too much time, making forward progress on a story becomes challenging. 
+\sout{\textit{Synchronous communication} enables a high bandwidth conversionation, where participants can quickly discuss and iterate on a topic. Asynchronous communication (e.g. email or instant messaging) introduces delays in responses, context switching, the overhead of preparing a message, and increased opportunities for messages to be misunderstood. Co-locating the team into the same aisle increases the opportunities for synchronous communication and impromptu team huddles.  Co-located teams typically have greater verbal and nonverbal communication compared to distributed teams. Daily standups provide inexpensive touch points for the team to synchronize and resolve issues. Teams prefer synchronous communication over asynchronous communication. }
 
 
-Pivotal forms \textit{cross-functional teams} with software engineers, product managers, and interaction designers sharing a common goal. The \textit{balanced team} movement espouses the same philosophy as Pivotal.
+\sout{Since \textit{asking for help} is a regular part of the day, welcoming interruptions is desirable. Asking another pair for help is a sign of respect as engineers enjoy that someone values their opinion. On teams with 10 or more engineers, it is possible for one pair to be interrupted too frequently. When the interruptions consume too much time, making forward progress on a story becomes challenging. }
 
 
-An \textit{egoless culture} is promoted through a meritocracy. The team wants the best solution for the product regardless of who presents ideas. There is no discussion or awareness about job titles or seniority. While the HR system has engineering levels for comparing compensations across the organization, in day-to-day practice everyone is on the same level. Pivotal has a flat engineering culture. The rotation of project roles also reinforces an egoless organization, an engineer leading a project today will be an individual contributor on the next project. 
+\sout{Pivotal forms \textit{cross-functional teams} with software engineers, product managers, and interaction designers sharing a common goal. The \textit{balanced team} movement espouses the same philosophy as Pivotal. }
 
 
-The \textit{rotation of engineers through different parts of the system} from the overlapping pair rotation practice (Section \ref{OverlappingPairRotationSection}) helps remove individual psychological ownership of the code and promote collective ownership. Ideally, anyone on the team can work on any part of the team’s code. Adopting practices that promote team code ownership (Chapter \ref{TeamCodeOwnershipChapter}) helps build a collaborating environment.
+\sout{An \textit{egoless culture} is promoted through a meritocracy. The team wants the best solution for the product regardless of who presents ideas. There is no discussion or awareness about job titles or seniority. While the HR system has engineering levels for comparing compensations across the organization, in day-to-day practice everyone is on the same level. Pivotal has a flat engineering culture. The rotation of project roles also reinforces an egoless organization; an engineer leading a project today will be an individual contributor on the next project}. 
 
 
-\textit{Pair programming} conditions individuals to work well with the rest of the team. A healthy pair programming dynamics is one comprised of listening, empathy, teaching, and learning. These then transfer from interactions with the partner to the rest of the team. The pair works on everything together from software development, asking for help, taking breaks, and attending meetings. If an individual is pulled into a project related meeting, they take their partner with them. Since the team desires to spread knowledge and context to the entire team, the team prefers for both to be involved instead of one person soloing. Pair programming can foster healthy habits that serve the entire team well.
+\sout{\textit{Enabling team code ownership} means empowering the team to be able to work on any part of the system. The pair rotation of engineers and the rotation the engineers through different parts of the system helps remove individual psychological ownership of the code and promote collective ownership. Ideally, anyone on the team can work on any part of the team’s code.}
+
+
+\sout{\textit{Pair programming} conditions individuals to work well with the rest of the team. A healthy pair programming dynamics is one comprised of listening, empathy, teaching, and learning. These characteristics then transfer from interactions with the partner on a pair to the rest of the team. The pair works on everything together from software development, asking for help, taking breaks, and attending meetings. When individuals are pulled into a project related meeting, they take their partner with them. Since the team desires to spread knowledge and context to the entire team, the team prefers for both to be involved instead of one person soloing. Pair programming can foster healthy habits that serve the entire team well.}
 
 
 \subsection{Constant improvement}
 
 
-The culture embodies constant improvement through tight feedback loops. The feedback loops help the teams identify and remove waste such as those identified in Chapter \ref{SoftwareEngineeringWasteChapter}. 
-Observed feedback loops at Pivotal include:
+\sout{The culture embodies constant improvement through tight feedback loops. The feedback loops help the teams identify and remove waste. Feedback loops happen at different frequencies (e.g. ad-hoc, daily, weekly), at different levels (e.g. individuals, team), and on different aspects (e.g. scenarios, mock-ups, features, code, and the product.)}
+
+
+\sout{Here are some feedback loops employed at Pivotal:}
 \begin{itemize}
   \item Daily standups
   \item Weekly retros
@@ -108,10 +309,12 @@ Observed feedback loops at Pivotal include:
 \end{itemize}
 
 
-Ideal feedback is provided promptly so that the individual or team learn from the situation. Delaying course corrections delay the benefits. For example, one team had a ten-minute build which periodically annoyed them and slowed their development workflow down. On the last week of the project, the team examined the slowness of the build and realized that a simple resequencing of the tests could bring it down to three minutes. The pair lamented, \quotes{why didn’t we do this sooner?} as they could have benefitted from the results throughout the project. 
+\sout{Ideal feedback is provided promptly so that the individual or team learn from the situation. Delaying course corrections delay the benefits. For example, one team had a ten-minute build which periodically annoyed them and slowed their development workflow down. On the last week of the project, the team examined the slowness of the build and realized that a simple resequencing of the tests could bring it down to three minutes. The pair lamented, \quotes{why didn’t we do this sooner?} as they could have benefitted from the results throughout the project. }
 
 
-On a typical project, there often are many things that can be improved. The art is in prioritizing which pain points to address first. 
+\sout{On a typical project, there often are many things that can be improved. The art is in prioritizing which pain points to address first. }
 
 
-The weekly retro becomes a \quotes{catch-all} event for identifying any possible team improvement. Pivotal retros are open, cathartic experiences for the team, managed with seasoned facilitators. 
+\sout{The weekly retro becomes a \quotes{catch-all} event for identifying any possible team improvement. Pivotal retros are open, cathartic experiences for the team, managed with seasoned facilitators. }
+
+
