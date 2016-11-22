@@ -1,5 +1,6 @@
 % Sample apostrophy's to remove team's 
 
+
 \chapter{Introduction}
 \label{IntroductionChapter}
 
@@ -44,13 +45,22 @@ Appendix \ref{AppendixInterviews} showcases interview data. The initial intervie
 
 
 \chapter{Extreme Programming}
+\label{ExtremeProgramming}
+
+
 Extreme Programming is characterized by a set of values, principles, and practices. When transitioning to Extreme Programming, Beck recommends adopting the primary practices first. 
 \section{Values}
-\textbf{Communication:} Extreme programming is a collaborative endeavor with communication frequently happening. Teams prefer open and transparent communication. 
+Values help guide a team. Values remind a team why they do certain practices. Without values, a team might \quotes{cargo-cult} a practice (e.g. continue to religiously follow a practice without understanding why they follow it.) Beck says \quotes{values are the roots of the things we like and don't like in a situation} .\cite{BeckExtremeProgramming2004}
+
+
+Values are abstract concepts, and hard to observe, whereas it is much easier to examine if a team is following a practice. \quotes{Practices are evidence of value \ldots Just as values bring purpose to practices, practices bring accountability to values} \cite{BeckExtremeProgramming2004}.
+
+
+\textbf{Communication:} Extreme programming is a collaborative endeavor with frequent communication. Teams prefer open and transparent communication. 
 \quotes{You can listen to people who have had similar problems in the past} \cite{BeckExtremeProgramming2004}. When combined with the reflective principle, the team can ask \quotes {what communication do you need to keep yourself out of this trouble in the future?} \cite{BeckExtremeProgramming2004}
 
 
-\textbf{Simplicity:} The team strives to \quotes{make a system simple enough to gracefully solve only today's problem} \cite{BeckExtremeProgramming2004}. Teams prefer simpler solutions to more complex solutions. Simpler solutions often take more work to discover and implement than complex solutions, but simpler solutions often require less communication than complex solutions.
+\textbf{Simplicity:} Teams prefer simpler solutions to more complex solutions. Teams strive to \quotes{make a system simple enough to gracefully solve only today's problem} \cite{BeckExtremeProgramming2004}. Simpler solutions often take more work to discover and implement than complex solutions, but simpler solutions often require less communication than complex solutions.
 
 
 
@@ -64,7 +74,7 @@ Extreme Programming is characterized by a set of values, principles, and practic
 \textbf{Feedback:} Feedback provides an opportunity for the team to respond to changing circumstances in the marketplace, in the product, in the team, and with the development process. Change requires feedback. In order for continuous improvement to work, the team decides to collect feedback at multiple frequencies and at multiple levels. The team prefers improvement over expecting perfection. Teams attempt to shorten the feedback cycle so that the team can respond sooner rather than later.
 
 
-\textbf{Courage:} \quotes{Courage is effective action in the face of fear}   \cite{BeckExtremeProgramming2004}. Sometimes it takes courage to make the needed change. Messy code will remain messy unless someone has the courage to make it better. With change, the team needs to accept the risk that the system may break. The individual considers the consequences before making changes. When the team knows the problem, courage is a bias to action. When the team does not know the underlying problem, courage may be patience. 
+\textbf{Courage:} \quotes{Courage is effective action in the face of fear}   \cite{BeckExtremeProgramming2004}. Sometimes it takes courage to make the needed change. Messy code will remain messy unless a programmer demonstrates courage to improve it. Individuals consider the consequences before making a change. With change, the team accepts the risk of unintended consequences (e.g. the tests fail.) When the team knows the problem, courage is a bias to action. When the team does not know the underlying problem, courage may simply be patience. 
 
 
 \textbf{Respect:} Collaborative software development is founded on respect. Team members decide to respect each other. \quotes{If members of a team don't care about each other and what they are doing, XP won't work} \cite{BeckExtremeProgramming2004}.
@@ -74,10 +84,13 @@ Extreme Programming is characterized by a set of values, principles, and practic
 
 
 \section{Principles}
-\textbf{Humanity:} The practices that a team follows need to satisfy human needs. Alternative software development practices may not respect psychological needs. In this case, a practice may grind away at an individual's humanity \cite{BeckExtremeProgramming2004}. Beck lists fundamental human needs as basic safety, accomplishment, belonging, growth, and intimacy \cite{BeckExtremeProgramming2004}. Team software development balances the needs of the individual with the needs of the team. 
+The principles help guide a team in implementing the values. When two potential practices achieve the same value,  the principles guide the team. Beck shows that both documentation and daily conversations satisfy the need of communication, yet the principle of humanity reminds that daily communication satisfies the psychological need of human connection \cite{BeckExtremeProgramming2004}.
 
 
-\textbf{Economics:} People buying the product fuels the business. The practices that a team follows need to balance business needs with technical needs\quotes {Software development is more valuable when it earns money sooner and spends money later} \cite{BeckExtremeProgramming2004}. Incremental design and incremental delivery allow the team to release earlier and delay expenses until later. Avoid building a \quotes{perfect} product that one wants to buy.
+\textbf{Humanity:} The practices that a team follows need to satisfy human needs. Alternative software development practices may not respect psychological needs. A practice may grind away at an individual's humanity \cite{BeckExtremeProgramming2004}. Beck lists fundamental human needs as basic safety, accomplishment, belonging, growth, and intimacy \cite{BeckExtremeProgramming2004}. Team software development balances the needs of the individual with the needs of the team. 
+
+
+\textbf{Economics:} The practices that a team follows need to balance business needs with technical needs\quotes. People buying the product fuels the business. {Software development is more valuable when it earns money sooner and spends money later} \cite{BeckExtremeProgramming2004}. Incremental design and incremental delivery allow the team to release earlier and delay expenses until later. Avoid building the illusive \quotes{perfect} product.
 
 
 \textbf{Mutual Benefit:} The practices that a team follows need to find solutions that benefit everyone involved. A practice that does not benefit the team now is not mutually beneficial, e.g. writing documentation for a faceless, future maintenance team. Mutual beneficial practices help people now and in the future. 
@@ -85,50 +98,66 @@ Extreme Programming is characterized by a set of values, principles, and practic
 
 
 
-\textbf{Self-Similarity:} Try applying solutions that work in one context to another context. Beck sees a similarity in listing themes for a quarter, addressing stories in a week, writing tests for a story.
+\textbf{Self-Similarity:} The practices that a team follows can potentially be adapted to different contexts. Try applying solutions that work in one context to another context. Beck sees a similarity in listing themes for a quarter, addressing stories in a week, writing tests for a story.
 
 
-\textbf{Improvement:} Teams benefit from constant improvement. The practices that a team follows evolve and improve over time. The point of XP is \quotes{excellence in software development through improvement} \cite{BeckExtremeProgramming2004}. Starting is preferred to waiting for perfection. 
+\textbf{Improvement:} The practices that a team follows evolve and improve over time. Teams benefit from constant improvement. The point of XP is \quotes{excellence in software development through improvement} \cite{BeckExtremeProgramming2004}. Starting is preferred to waiting for perfection. 
 
 
-\textbf{Diversity:} Multiple perspectives provides richer solutions. \quotes{Two ideas about a design present an opportunity, not a problem}  \cite{BeckExtremeProgramming2004}. The practices that a team follows should resolve conflict productively. Teams benefit from a diversity of skills, perspectives, attitudes, and experiences.
+\textbf{Diversity:} The practices that a team follows should resolve conflict productively. \quotes{Two ideas about a design present an opportunity, not a problem}  \cite{BeckExtremeProgramming2004}. Multiple perspectives provides richer solutions. Teams benefit from a diversity of skills, perspectives, attitudes, and experiences.
 
 
-\textbf{Reflection:} Teams reflect on how and why they are working. The practices that a team follows should enable reflection at different frequencies and multiple levels. The team sees mistakes as opportunities for growth.
+\textbf{Reflection:} The practices that a team follows should enable reflection at different frequencies and multiple levels. Teams reflect on how and why they are working. The team sees mistakes as opportunities for growth.
 
 
-\textbf{Flow:} \quotes{Flow in software development is delivering a steady flow of valuable software by engaging in all the activities of development simultaneously}  \cite{BeckExtremeProgramming2004}. The practices that a team follows should decrease batch sizes to enhance flow. Teams want a steady stream of work moving through the system. The ideal \quotes{batch size} is one story per developer. Anything that interrupts the flow of work needs removing. 
+\textbf{Flow:} The practices that a team follows should decrease batch sizes to enhance flow. \quotes{Flow in software development is delivering a steady flow of valuable software by engaging in all the activities of development simultaneously}  \cite{BeckExtremeProgramming2004}. Teams want a steady stream of work moving through the system. The ideal \quotes{batch size} is one story per developer. Anything that interrupts the flow of work needs removing. 
 
 
 \textbf{Opportunity:} The practices that a team follows need to frame problems as opportunities. A team \quotes{playing it safe} will make fewer mistakes but also move slower than needed.
 
 
-\textbf{Redundancy:} \quotes{The critical, difficult problems in software development should be solved several different ways} \cite{BeckExtremeProgramming2004}. The practices that a team follows should address difficult problems in multiple ways. For example, XP handles the critical, difficult problem of defects with \quotes{pair programming, continuous integration, sitting together, real customer involvement, and daily deployment}  \cite{BeckExtremeProgramming2004}. 
+\textbf{Redundancy:} The practices that a team follows should address difficult problems in multiple ways. \quotes{The critical, difficult problems in software development should be solved several different ways} \cite{BeckExtremeProgramming2004}. For example, XP handles the critical, difficult problem of defects with \quotes{pair programming, continuous integration, sitting together, real customer involvement, and daily deployment}  \cite{BeckExtremeProgramming2004}. 
 
 
 % The team needs to continue in spite of team disruption. Spreading knowledge around the team helps it survive through churn. This enables people to go on vacation whenever needed.
 
 
-\textbf{Failure:} When the team does not know what to do, try something and get feedback. The practices that a team follows prefer bias a team towards action. Sometimes replacing lengthy conversation and debate with trying multiple ideas produces less waste. \quotes{If you're having trouble succeeding, fail} \cite{BeckExtremeProgramming2004}.
+\textbf{Failure:} The practices that a team follows prefer bias a team towards action. When the team does not know what to do, try something and get feedback. \quotes{If you're having trouble succeeding, fail} \cite{BeckExtremeProgramming2004}. Sometimes replacing lengthy conversation and debate with trying multiple ideas produces less waste.
 
 
 \textbf{Quality:} The practices a team follows should deliver high-quality products. Increases in quality \quotes{leads to improvements in other desirable project properties, like productivity and effectiveness} \cite{BeckExtremeProgramming2004}. Beck argues that short-changing quality is not a way to make a project go faster. 
 
 
-\textbf{Baby Steps:} Start with the simplest smallest change possible and iterate from there. Decompose significant changes into small incremental changes. The practices a team follows need to prefer small incremental changes. Beck often asks, \quotes {what's the least you could do that is recognizably in the right direction?} \cite{BeckExtremeProgramming2004}. 
+\textbf{Baby Steps:} The practices a team follows need to prefer small incremental changes. Start with the simplest smallest change possible and iterate from there. Decompose significant changes into small incremental changes. Beck often asks, \quotes {what's the least you could do that is recognizably in the right direction?} \cite{BeckExtremeProgramming2004}. 
 
 
-\textbf{Accepted Responsibility:} Responsibility is accepted, not assigned. The practices a team follows favors empowering people working on a problem the authority to solve it. Avoid the situation where people in one part of the organization are telling others what to do. 
+\textbf{Accepted Responsibility:} The practices a team follows favors empowering people working on a problem the authority to solve it. Responsibility is accepted, not assigned. Avoid the situation where people in one part of the organization are telling others what to do. 
 
 
 \section{Primary Practices}
-\textbf{Sit Together:} Since software development is a collaborative endeavor, having teams sit together increases collaboration. Distributed teams are still possible, yet \quotes{\quotes{Sit Together} predicts that the more face time you have, the more humane and productive the project}  \cite{BeckExtremeProgramming2004}. 
+For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that \quotes{the primary practices are useful independent of what else you are doing} resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices.
+
+
+
+
+Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\twoColumnWidth{}]{extreme_programming_images/summary_of_practices.png}
+\caption{Extreme Programming Practices \cite{BeckExtremeProgramming2004}}
+\label{KnowledgeSharing}
+\end{figure}
+
+
+\textbf{Sit Together:} Software development is a collaborative endeavor. Co-locating teams increases collaboration. Distributed teams are still possible, yet \quotes{Sit Together predicts that the more face time you have, the more humane and productive the project}  \cite{BeckExtremeProgramming2004}. 
 
 
 %Synchronous communication enables a high bandwidth conversation, where participants can quickly discuss and iterate on a topic. Asynchronous communication (e.g. email or instant messaging) introduces delays in responses, context switching, the overhead of preparing a message, and increased opportunities for messages to be misunderstood. Co-locating the team into the same aisle increases the opportunities for synchronous communication and impromptu team huddles.  Co-located teams typically have greater verbal and nonverbal communication compared to distributed teams. Daily standups provide inexpensive touch points for the team to synchronize and resolve issues. Teams prefer synchronous communication over asynchronous communication. 
 
 
-\textbf{Whole Team:} This is also known as cross-functional teams. Include people on the team with the skills needed for success. Beck points out that a sense of team fulfills people's psychological needs. \quotes{We belong. We are in this together. We support each others' work, growth, and learning.} \cite{BeckExtremeProgramming2004}
+\textbf{Whole Team:} Whole team is also known as cross-functional teams. Include people on the team with the skills needed for success. Beck points out that a sense of team fulfills an individual's psychological needs. \quotes{We belong. We are in this together. We support each others' work, growth, and learning.} \cite{BeckExtremeProgramming2004}
  
 %The entire team is responsible for the success of the project, and thus is empowered to make decisions to get it done.
 
@@ -150,13 +179,13 @@ Extreme Programming is characterized by a set of values, principles, and practic
 % Two engineers use one computer with two monitors, two keyboards, and two mice to implement each story. Ideally, the two enter into a state of flow where, at the end of the day, no one knows who wrote what. No individual ownership.
 
 
-\textbf{Stories:} Stories are \quotes{units of customer-visible functionality}  \cite{BeckExtremeProgramming2004}. Stories have a name and a description or graphical depiction. 
+\textbf{Stories:} Stories are \quotes{units of customer-visible functionality}  \cite{BeckExtremeProgramming2004}. Stories have a name and a description or graphical depiction. Stories track the work to be done.
 
 
 % The product manager decomposes a product into features and decomposes features into stories. Stories describe how the user interacts with the system.  Stories represent the unit of work to be done. Stories have acceptance criteria. 
 
 
-\textbf{Weekly Cycle:} Each week, the team accepts a certain amount of work to accomplish. During a meeting at the beginning of the week, the team reviews progress to date, the customer choose a week's worth of stories, and the engineers decompose the stories into tasks and individually estimate each task. \quotes{The goal is to have deployable software at the end of the week which everyone can celebrate as progress}  \cite{BeckExtremeProgramming2004}.  \cite{BeckExtremeProgramming2004}. 
+\textbf{Weekly Cycle:} Each week, the team accepts a certain amount of work to accomplish. During a meeting at the beginning of the week, the team reviews progress to date, the customer chooses a week's worth of stories, and the engineers decompose the stories into tasks and individually estimate each task. \quotes{The goal is to have deployable software at the end of the week which everyone can celebrate as progress}  \cite{BeckExtremeProgramming2004}. 
 
 
 % each engineer picks up a set of stories for the week. Engineers only estimate their stories to verify that they have enough capacity to accomplish the work for the week. Slack keeps slack for unforeseen circumstances.
@@ -176,32 +205,35 @@ Extreme Programming is characterized by a set of values, principles, and practic
 \textbf{Ten-minute Build:} Building the code and running the test suite should be automated and short. Longer builds increase the feedback loop. 
 
 
-\textbf{Continuous Integration:} When working on new features, routinely integrate new code into the master code repository. Avoid long-lived branches. Beck suggests doing this \quotes{no more than a couple of hours}  \cite{BeckExtremeProgramming2004}.  The longer the team waits to integrate, the more unpredictable and expensive integration becomes. 
+\textbf{Continuous Integration:} When working on new features, routinely integrate new code into the master code repository. Avoid long-lived branches. Beck suggests un-integrated code live on its own \quotes{no more than a couple of hours}  \cite{BeckExtremeProgramming2004}.  The longer the team waits to integrate, the more unpredictable and expensive integration becomes. 
 
 
-\textbf{Test-First Programming:} Write tests before writing code. Every production line of code is preceded by a test.  Test-first programming addresses several concerns: scope-creep,  coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep since, without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
+\textbf{Test-First Programming:} The developers write tests before writing code. Every production line of code is preceded by a test.  Test-first programming addresses several concerns: scope-creep,  coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep; without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
 
 
-\textbf{Incremental Design:} Build the system incrementally and evolve the design every day. In the past, software teams would have a long design phase that assumed features would not change. When the team's understanding of the system changes, make incremental changes to the system to align the code's design with the team's desired goal. Routinely remove duplication.
+\textbf{Incremental Design:} Build the system incrementally and evolve the design every day. In the past, software teams might often had long design phases that assumed features would not change. When the team's understanding of the system changes, make incremental changes to the system to align the code's design with the team's desired goal. Routinely remove duplication.
 
 
 \section{Corollary Practices}
+Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems \quotes {difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices} \cite{BeckExtremeProgramming2004}.
+
+
 \textbf{Real Customer Involvement:} Make the customer a part of the team. \quotes{The point of customer involvement is to reduce wasted effort by putting the people with the needs in direct contact with the people who can fill those needs}  \cite{BeckExtremeProgramming2004}.
 
 
 % The customer drives the feature selection, not the team.
 
 
-\textbf{Incremental Deployment:} Switch between a legacy system and a replacement system in incremental steps, not a hard switch over.
+\textbf{Incremental Deployment:} Switch between a legacy system and a replacement system in incremental steps. Avoid a hard switch over from a legacy system to a new system.
 
 
 % Deliver code early and often.
 
 
-\textbf{Team Continuity:} \quotes{Keep effective teams together}  \cite{BeckExtremeProgramming2004}. People are not fungible, and building relationships is part of creating a high performing team. Rotate people through teams to help spread knowledge.
+\textbf{Team Continuity:} \quotes{Keep effective teams together}  \cite{BeckExtremeProgramming2004}. People are not fungible, and building relationships is part of creating a high performing team. Rotating people through teams helps spread knowledge.
 
 
-\textbf{Shrinking Teams:} Try to improve efficiency so that less team members are needed in the team. 
+\textbf{Shrinking Teams:} Try to improve team efficiency so that the team can shrink in size. When a team becomes more productive, re-allocated extraneous team members to other teams.
 
 
 % Allocate people to where they are needed in the organization
@@ -220,7 +252,7 @@ Extreme Programming is characterized by a set of values, principles, and practic
 \textbf{Single Code Base:} Ideally there is only one branch of the code. Multiple branches, (e.g. for releases, or customers) creates extra work. Branches live a few hours at most.
 
 
-\textbf{Daily Deployment:} Every day put a new version of the code onto production. 
+\textbf{Daily Deployment:} Every day put a new version of the code into production. 
 
 
 \textbf{Negotiated Scope Contract:}  \quotes{Write contracts for software development that fix time, costs, and quality but call for an ongoing negotiation of the precise scope of the system.}
