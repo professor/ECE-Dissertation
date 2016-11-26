@@ -1,0 +1,132 @@
+\begin{table*}[htbp]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Types of Software Development Waste - Original}
+\label{Waste}
+\begin{tabular}{|p{2.5in}|p{3.6in}|} %dissertation size
+\hline
+\textbf{Waste} \newline Description                                                                                                         & Observed Causes                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
+\textbf{Building the wrong feature or product} \newline
+The cost of building a feature or product that does not address user's needs or desiderata.                                  & \textit{User Desiderata:} not doing user research, validation, or testing; ignoring user feedback; working on low user value features \newline \textit{Business Desiderata:} not involving a stakeholder; slow stakeholder feedback; unclear priorities                                                                                                                                                                                  \\ \hline
+\textbf{Mismanaging the backlog  } \newline The cost of duplicating work or expediting lower user value features.                                                       & Backlog inversion \newline Starting too many features \newline Duplicated work \newline Not enough ready stories  \newline Imbalance of feature work and bug fixing                                                                                                                                                                                                                                                                                                                                      \\ \hline
+\textbf{Unnecessary complexity} \newline The cost of creating a more complicated solution than necessary,  a missed opportunity to simplify features, user interface, or code.      & Unnecessary feature complexity; unnecessary technical complexity; big design up-front;  lack of reuse (duplicating code; interaction design snowflakes)                                                
+\\ \hline
+\textbf{Rework } \newline The cost of altering delivered work that does not meet the expectations of product managers, interaction designers or users.    & Rejected Stories \newline \textit{No clear definition of done:} ambiguous story; second guessing design mocks; capricious thrashing \newline \textit{Defects and Bugs:} poor testing strategy; no root-cause analysis on bugs; delaying testing or critical bug fixing                                                                                                                                                                    \\ \hline
+\textbf{Extra cognitive effort} \newline   The cost from the unneeded expenditure of mental energy.                                                                                                                 & Inefficient tools and problematic APIs, libraries, and frameworks  \newline Inefficient development flow \newline \textit{Sluething information:} unclear bug reports; messy code; unclear commit messages; knowledge loss from team churn \newline\textit{Suffering from technical debt:} hard to change code
+                                                                     \\ \hline
+\textbf{Cognitive hindrance} \newline The cost of decreasing cognitive capacity or ability.                        & \textit{Emotional Stress:} low team morale; rush mode; lack of empathy \newline \textit{Cognitive Load:} complex stories; noisy output from tools; \newline \textit{Context switching from delayed feedback:} product manager taking a long time to accept or reject a story; unavailable product manager or interaction designer                                                                                                                                                        \\ \hline
+\textbf{Waiting} \newline The cost of idle time, often hidden by multi-tasking. The cost of not having the needed information or resources to get one's work done. & Slow tests or unreliable tests \newline Unreliable acceptance environment \newline Missing information, people, or equipment                                                                                                                                                                                                                                                                            \\ \hline
+\textbf{Ineffective communication} \newline The cost from incomplete, incorrect, misleading, inefficient, or absent communication.                         & Team size is too large \newline \textit{Asynchronous communication:} distributed teams; non-collocated stakeholder; dependency on another team; opaque processes outside team \newline \textit{Imbalance:} dominating the conversation; not listening \newline \textit{Inefficient meetings:} lack of focus; skipping retros; not discussing blockers each day; meetings running over (e.g. long standups) \newline
+\textbf{\textit{Sluething missing information:} unclear bug reports}
+\\ \hline                  
+\end{tabular} 
+\end{table*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{table*}[htbp]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Types of Software Development Waste - Tech vs Business Tweak}
+\label{Waste}
+\begin{tabular}{|p{2.5in}|p{3.6in}|} %dissertation size
+\hline
+\textbf{Waste} \newline Description  & Observed Causes 
+\\ \hline
+\textbf{Extra technical work} \newline   
+The cost from technical obstacles.  & 
+Inefficient tools and problematic APIs, libraries, and frameworks  \newline
+Sluething the code \newline
+\textit{Suffering from technical debt:} hard to change code, messy code \newline
+\textit{Cognitive Load:} complex stories; noisy output from tools; \newline
+\\ \hline
+\textbf{Extra business work} \newline 
+The cost from business obstacles. & 
+Inefficient development flow \newline
+\textit{Emotional Stress:} low team morale; rush mode; lack of empathy \newline 
+\textit{Context switching from delayed feedback:} delayed story acceptance or rejection, long running tests or builds     \\ \hline
+\end{tabular} 
+\end{table*}
+
+Questions: what to name waste categories
+
+
+\begin{table*}[htbp]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Types of Software Development Waste - One category}
+\label{Waste}
+\begin{tabular}{|p{2.5in}|p{3.6in}|} %dissertation size
+\hline
+\textbf{Waste} \newline Description  & Observed Causes 
+\\ \hline
+\textbf{Extra cognitive work} \newline   
+The cost from the unneeded expenditure of mental energy or the cost of decreasing cognitive capacity. & 
+Inefficient tools and problematic APIs, libraries, and frameworks  \newline
+\textit{Suffering from technical debt}: hard to change code, messy code \newline
+\textit{Cognitive effort:} Inefficient development flow, Sluething the code \newline
+\textit{Cognitive hindrance} Emotional Stress (low team morale; rush mode; lack of empathy), Cognitive Load (complex stories), Context switching from delayed feedback
+\\ \hline
+\end{tabular} 
+\end{table*}
+
+
+\begin{table*}[htbp]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Types of Software Development Waste - Effort vs Load}
+\label{Waste}
+\begin{tabular}{|p{2.5in}|p{3.6in}|} %dissertation size
+\hline
+\textbf{Waste} \newline Description  & Observed Causes 
+\\ \hline
+\textbf{Extra cognitive effort} \newline   
+The cost from the unneeded expenditure of mental energy. & 
+Inefficient tools and problematic APIs, libraries, and frameworks  \newline Inefficient development flow \newline
+\textit{Suffering from technical debt}: hard to change code, messy code
+\\ \hline
+\textbf{Reduced cognitive capacity} or \newline 
+\textbf{Reduced mental workload} \newline 
+The cost of decreasing cognitive capacity due to cognitive hindrances or higher cognitive load.  & 
+\textit{Emotional Stress:} low team morale; rush mode; lack of empathy \newline \textit{Cognitive Load:} complex stories \newline
+\textit{Context switching from delayed feedback:} delayed story acceptance or rejection, long running tests or builds  \\ \hline
+ \\ \hline
+\end{tabular} 
+\end{table*}
+
+
+
+\begin{table*}[htbp]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Types of Software Development Waste - One category}
+\label{Waste}
+\begin{tabular}{|p{2.5in}|p{3.6in}|} %dissertation size
+\hline
+\textbf{Waste} \newline Description  & Observed Causes 
+\\ \hline
+\textbf{Knowledge loss} \newline   
+The cost of re-aquiring information that the team once knew. & 
+Knowledge loss from team churn \newline
+Knowledge solos \newline
+Effect: Sluething the code \newline
+??Is this "re-learning" ??
+\\ \hline
+\end{tabular} 
+\end{table*}
+
+

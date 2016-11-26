@@ -3,6 +3,36 @@
 
 \section{Summary}
 
+\begin{table}[t]
+\renewcommand{\arraystretch}{1.5}
+\centering
+\caption{Examples for Threats for System Context}
+\label{TeamCodeOwnershipChainOfEvidence}
+\begin{tabular}{|p{\twoColumnWidth{}}|}
+\hline
+Threat: Increasing knowledge silos  \\
+\hline
+Sharing knowledge around whole team is important.\\ 
+\quotes{Knowledge silos are a red flag for me. For example, we have some siloing around certain parts of the app. Most of it is around the big pain points.} \\ \quotes{I feel that we don't have that context spread around fully.} \\
+Hesitancy to jump onto stories without context.\\ 
+\quotes{It does make me not completely comfortable to jump into stories on certain aspects of the system. If I was on a story that's going to deal with some tricky part of the system, I would want to be paired with somebody who had more traction on it.} \\
+\hline
+Threat: Increasing team size              \\
+\hline
+With a big team, keeping shared context is challenging as so much parallel work is being done. \\ 
+\quotes{Having five, sometimes six pairs on the project means the team is making significant progress each week. It is hard to keep context.  If you spend a week on one part of the system, the other pairs are changing the other parts of the system. When you get back to some other place, you don't know what has changed. Because of that speed, it's harder to keep context on everything.}  \\
+\hline
+Threat: Increasing code base size \\
+\hline
+Code continues to expand.\\
+\quotes{The code is complicated, it is expanding a lot so in my head. I'm thinking like a big bang, where it starts out very small and now it just keeps expanding and growing. We're still adding a bunch of features.}  \\
+\hline
+
+
+
+\end{tabular}
+\end{table}
+
 \textit{Context:} This chapter examines team code ownership, the core category of sustainable software development. Team code ownership is a software development practice where any team member can modify any part of the team's code. However, many factors beyond official policy affect a developer's sense of ownership. 
 
 \textit{Objective:} The purpose is to understand the factors that affect a team's sense of code ownership.
@@ -37,7 +67,7 @@ Later, Bird et al. \cite{BirdDontTouchMyCode} contrasted the effects of strong- 
 
 Meanwhile, Murphy  \cite{MurphyIEEESoftware} argued that the concept of code ownership must be unpacked and expanded. He argued that the complexities of code ownership are missed by merely examining git commits to determine who modified which files.
 
-This research defines \textit{team code ownership} as \quotes{the ability for any developer on a team to change any of the team’s code.} For small systems and teams, \textit{collective code ownership} and \textit{team code ownership} are practically synonymous since a member of a four person team usually has the ability to modify any part of the team's code. For a large system with multiple teams, in practice, teams would have strong ownership of their portion of the system. Allowing any pair to modify any part of Microsoft Windows or Pivotal Cloud Foundry is impractical. For a large system with poorly defined team boundaries, it is possible for all the teams to adopt \textit{collective code ownership} without achieving \textit{team code ownership} as one team's changes to the code base may negatively affect other teams.
+This research defines \textit{team code ownership} as \quotes{the ability for any developer on a team to change any of the team's code.} For small systems and teams, \textit{collective code ownership} and \textit{team code ownership} are practically synonymous since a member of a four person team usually has the ability to modify any part of the team's code. For a large system with multiple teams, in practice, teams would have strong ownership of their portion of the system. Allowing any pair to modify any part of Microsoft Windows or Pivotal Cloud Foundry is impractical. For a large system with poorly defined team boundaries, it is possible for all the teams to adopt \textit{collective code ownership} without achieving \textit{team code ownership} as one team's changes to the code base may negatively affect other teams.
 
 Team code ownership requires more than a team saying, \quotes{everyone can modify anything.} Instead, this research examines how a team feels that they own the code. This research definse \quotes{sense of team code ownership} as the degree to which individual members of the team feel collective ownership.  
 
