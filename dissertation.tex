@@ -57,6 +57,13 @@
 \newcommand{\durationOfResearchStudy}{two-year five-month}
 \newcommand{\durationOfResearchStudyPlural}{two-years and five-months}
 
+% http://tex.stackexchange.com/questions/12703/how-to-create-fixed-width-table-columns-with-text-raggedright-centered-raggedlef
+% \usepackage{array}
+%\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+% \newcolumntype{LEFT}[1]{>{\raggedright\arraybackslash}p{#1}}
+
 \setauthor{Todd Sedano}
 %\settitle{Empirical Study of Iterative Software Development in Academia and Industry: Effectiveness, Optimization, and Extension of the Essence Kernel}
 % \settitle{Empirical Study of Iterative Software Development in Industry}
@@ -106,30 +113,30 @@ I wish to thank the leadership of Pivotal for making this research possible; tha
 % \input{essence-steering}
 % \input{essence-green-lighting}
 
-% \input{introduction-do-not-edit}
-% \input{grounded-theory-do-not-edit}
-% \input{research-method-do-not-edit}
-% \input{sustainable-software-development}
-% \input{team-code-ownership}
-% \input{software-engineering-waste-do-not-edit}
-% \input{conclusion-do-not-edit}
+\input{introduction-do-not-edit}
+\input{grounded-theory-do-not-edit}
+\input{research-method-do-not-edit}
+\input{sustainable-software-development}
+\input{team-code-ownership}
+\input{software-engineering-waste-do-not-edit}
+\input{conclusion-do-not-edit}
 
-\input{waste-table}
+% \input{waste-table} %experiments
 
 \appendix
 \input{waste-chain-of-evidence}
 
-% \chapter{Interview Drawings and Partial Transcriptions}
-% \label{AppendixInterviews}
-% I asked many of the interviewees an open ended drawing question to begin a conversation by eliciting the their perspective on a topic. Here I include the diagrams with an abridged interview transcript where the interviewee describes their drawing.
-% \input{interviews/abridged_interview_2015_05_29}
-% \input{interviews/abridged_interview_2015_08_12_anchor}
-% \input{interviews/abridged_interview_2015_08_12_pm}
-% \input{interviews/abridged_interview_2016_01_08}
-% \input{interviews/abridged_interviews}
+\chapter{Interview Drawings and Partial Transcriptions}
+\label{AppendixInterviews}
+I asked many of the interviewees an open ended drawing question to begin a conversation by eliciting the their perspective on a topic. Here I include the diagrams with an abridged interview transcript where the interviewee describes their drawing.
+\input{interviews/abridged_interview_2015_05_29}
+\input{interviews/abridged_interview_2015_08_12_anchor}
+\input{interviews/abridged_interview_2015_08_12_pm}
+\input{interviews/abridged_interview_2016_01_08}
+\input{interviews/abridged_interviews}
 
-% \bibliographystyle{IEEEtran}
-% \bibliography{bibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography}
 
 \backmatter
 
