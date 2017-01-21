@@ -16,6 +16,9 @@ This section lists out the chain of evidence for the software engineering waste 
 
 
 
+
+
+
 \underline{Waste Category}: Building the wrong feature or product
 
 \quad \textbf{Cause Category}: User Desiderata
@@ -101,6 +104,9 @@ This section lists out the chain of evidence for the software engineering waste 
 \quad \quad \quad Retro Topic: Unable to sequence or prioritize the work
 
 
+
+
+
 \underline{Waste Category}: Mismanaging the backlog
 
 \quad \textbf{Cause Category}: Backlog inversion
@@ -167,7 +173,11 @@ This section lists out the chain of evidence for the software engineering waste 
 
 \quad Participant Observation: Engineers prioritizing stories
 
-\underline{Waste Category}: Unnecessary complex solutions
+
+
+
+
+\underline{Waste Category}: Unnecessarily complex solutions
 
 \quad \textbf{Cause Category}: Unnecessary feature complexity from the user's perspective
 
@@ -222,7 +232,52 @@ This section lists out the chain of evidence for the software engineering waste 
 
 
 
-\underline{Waste Category}: Mental workload
+
+\underline{Waste Category}: Extraneous cognitive load
+
+\quad \textbf{Cause Category}: Complex or large stories
+
+\quad \quad Retro Topic: Lots of edge cases
+
+\quad \quad Retro Topic: Mananging too much complexity in one super large story
+
+\quad \quad Retro Topic: Repeated rejection of super large story
+
+\quad \quad Interview: Large stories with lots of comments
+
+\quad \textbf{Cause Category}: Overload from context switching
+
+\quad \quad Participant Observation: Jumping between too many tasks \quotes{I am so confused. What were the details about this task? I do no remember.}
+
+\quad \quad Participant Observation: Overwhelmed with state \quotes{What problem are we trying to solve again? I need a break.}
+
+\quad \textbf{Cause Category}: Context Switching from delayed feedback
+
+\quad \quad \textit{Cause Property}: Product manager taking a long time to accept or reject a story
+
+\quad \quad \quad Retro Topic: Many stories waiting for acceptance
+
+\quad \quad \quad Retro Topic: Long stories acceptance feedback loop
+
+\quad \quad \quad Retro Topic: Builds going out with unaccepted stories
+
+\quad \quad \quad Retro Topic: Hard to figure out why a story is rejected
+
+\quad \quad \textit{Cause Property}: Unavailable product manager or interaction designer
+
+\quad \quad \quad Retro Topic: Missing product manager
+
+\quad \quad \quad Retro Topic: Missing designer
+
+\quad \quad \quad Retro Topic: Not quickly responding to questions
+
+\quad \quad \quad Retro Topic: Product has a lot on their plate
+
+\quad \quad \quad Retro Topic: Discussing about getting more product managers
+
+\quad \quad \quad Retro Topic: Designers are missing in pairs
+
+\quad \quad \quad Retro Topic: Not enough designer/developer pairing happening
 
 \quad \textbf{Cause Category}: Inefficient tools and problematic APIs, libraries, and frameworks
 
@@ -270,151 +325,109 @@ This section lists out the chain of evidence for the software engineering waste 
 
 \quad \quad \quad Retro Topic: Lacking confidence to change code
 
-\quad \textbf{Cause Category}: Unnecessary cognitive effort
+\quad \textbf{Cause Category}: Inefficient development flow
 
-\quad \quad \textit{Cause Property}: Inefficient development flow
+\quad \quad Retro Topic: Git force push (overrides version control system)
 
-\quad \quad \quad Retro Topic: Git force push (overrides version control system)
+\quad \quad Retro Topic: Not running test before delivering code
 
-\quad \quad \quad Retro Topic: Not running test before delivering code
+\quad \quad Retro Topic: Commits that break the build
 
-\quad \quad \quad Retro Topic: Commits that break the build
+\quad \quad Retro Topic: Merge conflicts due to long lived branches or large changes
 
-\quad \quad \quad Retro Topic: Merge conflicts due to long lived branches or large changes
+\quad \quad Retro Topic: Delivering code that is not done
 
-\quad \quad \quad Retro Topic: Delivering code that is not done
+\quad \quad Retro Topic: Broken build
 
-\quad \quad \quad Retro Topic: Broken build
+\quad \quad Retro Topic: Pushing code on a broke build
 
-\quad \quad \quad Retro Topic: Pushing code on a broke build
+\quad \quad Retro Topic: Continuous integration is red this week
 
-\quad \quad \quad Retro Topic: Continuous integration is red this week
+\quad \quad Retro Topic: Deploying software is painful
 
-\quad \quad \quad Retro Topic: Deploying software is painful
+\quad \textbf{Cause Category}: Sluething information
 
-\quad \quad \textit{Cause Property}: Sluething information
+\quad \quad Retro Topic: Unclear bug reports
 
-\quad \quad \quad Retro Topic: Unclear bug reports
+\quad \quad Retro Topic: Unclear commit messages
 
-\quad \quad \quad Retro Topic: Unclear commit messages
+\quad \quad Retro Topic: Reverse engineering technical decisions
 
-\quad \quad \quad Retro Topic: Reverse engineering technical desicions
+\quad \quad Retro Topic: Competing code patterns
 
-\quad \quad \quad Retro Topic: Competing code patterns
+\quad \quad Participant Observation: Messy code
 
-\quad \quad \quad Participant Observation: Messy code
+\quad \textbf{Cause Category}: Noisy output from tools
 
-\quad \textbf{Cause Category}: Cognitive hindrance
+\quad \quad Retro Topic: Distracted by useless output when running tests
 
-\quad \quad \textit{Cause Property}: Overload from context switching
 
-\quad \quad \quad \quad Participant Observation: Jumping between too many tasks \quotes{I am so confused. What were the details about this task? I do no remember.}
 
-\quad \quad \quad \quad Participant Observation: Overwhelmed with state \quotes{What problem are we trying to solve again? I need a break.}
 
-\quad \quad \textit{Cause Property}: Emotional stress
 
-\quad \quad \quad \textit{Cause Sub-Property}: Low team morale
 
-\quad \quad \quad \quad Retro Topic: Frustrated developers
+\underline{Waste Category}: Psychological Distress
 
-\quad \quad \quad \quad Retro Topic: Not managaging expectations
+\quad \textbf{Cause Category}: Low team morale
 
-\quad \quad \quad \quad Retro Topic: Negative attitudes
+\quad \quad Retro Topic: Frustrated developers
 
-\quad \quad \quad \quad Retro Topic: Apathy
+\quad \quad Retro Topic: Not managaging expectations
 
-\quad \quad \quad \quad Retro Topic: Not knowing everyone on the team
+\quad \quad Retro Topic: Negative attitudes
 
-\quad \quad \quad \quad Retro Topic: Project feels like it is falling apart emotionally
+\quad \quad Retro Topic: Apathy
 
-\quad \quad \quad \quad Retro Topic: Unacknowledged by management
+\quad \quad Retro Topic: Not knowing everyone on the team
 
-\quad \quad \quad \quad Retro Topic: Messy code
+\quad \quad Retro Topic: Project feels like it is falling apart emotionally
 
-\quad \quad \quad \quad Retro Topic: Imbalance of bugs to feature work
+\quad \quad Retro Topic: Unacknowledged by management
 
-\quad \quad \quad \quad Retro Topic: Poor lighting, lack of windows
+\quad \quad Retro Topic: Messy code
 
-\quad \quad \quad \textit{Cause Sub-Property}: Rush mode
+\quad \quad Retro Topic: Imbalance of bugs to feature work
 
-\quad \quad \quad \quad Retro Topic: Fixed features with a fixed timeline
+\quad \quad Retro Topic: Poor lighting, lack of windows
 
-\quad \quad \quad \quad Retro Topic: Not knowing features for the release
+\quad \textbf{Cause Category}: Rush mode
 
-\quad \quad \quad \quad Retro Topic: Aggressive timelines
+\quad \quad Retro Topic: Fixed features with a fixed timeline
 
-\quad \quad \quad \quad Retro Topic: Shifting deadline
+\quad \quad Retro Topic: Not knowing features for the release
 
-\quad \quad \quad \quad Retro Topic: Scope creep
+\quad \quad Retro Topic: Aggressive timelines
 
-\quad \quad \quad \quad Retro Topic: Prolonged rush mode
+\quad \quad Retro Topic: Shifting deadline
 
-\quad \quad \quad \quad Retro Topic: Unrealistic expectations
+\quad \quad Retro Topic: Scope creep
 
-\quad \quad \quad \quad Retro Topic: Repeatedly saying \quotes{this has to be done today}
+\quad \quad Retro Topic: Prolonged rush mode
 
-\quad \quad \quad \quad Retro Topic: Long days
+\quad \quad Retro Topic: Unrealistic expectations
 
-\quad \quad \quad \quad Retro Topic: Overtime
+\quad \quad Retro Topic: Repeatedly saying \quotes{this has to be done today}
 
-\quad \quad \quad \textit{Cause Sub-Property}: Lack of empathy
+\quad \quad Retro Topic: Long days
 
-\quad \quad \quad \quad Retro Topic: Not listening
+\quad \quad Retro Topic: Overtime
 
-\quad \quad \quad \quad Retro Topic: Criticizing in public
+\quad \textbf{Cause Category}: Lack of empathy
 
-\quad \quad \quad \quad Retro Topic: Difficult pairings
+\quad \quad Retro Topic: Not listening
 
-\quad \quad \quad \quad Retro Topic: Pairing fatigue
+\quad \quad Retro Topic: Criticizing in public
 
-\quad \quad \quad \quad Retro Topic: Interpersonal conflict
+\quad \quad Retro Topic: Difficult pairings
 
-\quad \quad \quad \quad Retro Topic: Kicking product out of the team space
+\quad \quad Retro Topic: Pairing fatigue
 
-\quad \quad \textit{Cause Property}: Cognitive load
+\quad \quad Retro Topic: Interpersonal conflict
 
-\quad \quad \quad \textit{Cause Sub-Property}: Complex or large stories
 
-\quad \quad \quad \quad Retro Topic: Lots of edge cases
 
-\quad \quad \quad \quad Retro Topic: Mananging too much complexity in one super large story
 
-\quad \quad \quad \quad Retro Topic: Repeated rejection of super large story
 
-\quad \quad \quad \quad Interview: Large stories with lots of comments
-
-\quad \quad \quad \textit{Cause Sub-Property}: Noisy output from tools
-
-\quad \quad \quad \quad Retro Topic: Distracted by useless output when running tests
-
-\quad \quad \textit{Cause Property}: Context Switching from delayed feedback
-
-\quad \quad \quad \textit{Cause Sub-Property}: Product manager taking a long time to accept or reject a story
-
-\quad \quad \quad \quad Retro Topic: Many stories waiting for acceptance
-
-\quad \quad \quad \quad Retro Topic: Long stories acceptance feedback loop
-
-\quad \quad \quad \quad Retro Topic: Builds going out with unaccepted stories
-
-\quad \quad \quad \quad Retro Topic: Hard to figure out why a story is rejected
-
-\quad \quad \quad \textit{Cause Sub-Property}: Unavailable product manager or interaction designer
-
-\quad \quad \quad \quad Retro Topic: Missing product manager
-
-\quad \quad \quad \quad Retro Topic: Missing designer
-
-\quad \quad \quad \quad Retro Topic: Not quickly responding to questions
-
-\quad \quad \quad \quad Retro Topic: Product has alot on their plate
-
-\quad \quad \quad \quad Retro Topic: Discussing about getting more product managers
-
-\quad \quad \quad \quad Retro Topic: Designers are missing in pairs
-
-\quad \quad \quad \quad Retro Topic: Not enough designer/developer pairing happening
 
 
 
@@ -507,6 +520,9 @@ This section lists out the chain of evidence for the software engineering waste 
 \quad \quad Retro Topic: Missing headsets
 
 
+
+
+
 \underline{Waste Category}: Knowledge loss
 
 \quad \quad Retro Topic: Knowledge loss from team churn
@@ -514,6 +530,9 @@ This section lists out the chain of evidence for the software engineering waste 
 \quad \quad Retro Topic: Team member departure
 
 \quad \quad Retro Topic: Knowledge silos forming
+
+
+
 
 
 
@@ -605,3 +624,8 @@ This section lists out the chain of evidence for the software engineering waste 
 
 \quad \quad \quad Retro Topic: Long standups
 
+
+
+
+
+% \quad \quad Retro Topic: Kicking product out of the team space
