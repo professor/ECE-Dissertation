@@ -32,7 +32,7 @@ Pivotal Labs has followed Extreme Programming \cite{BeckExtremeProgramming2004} 
 We selected Pivotal because: 1) it is successful; 2) it is interesting in its continued use and evolution of extreme programming; 3) it is accessible and cooperative with research. Both Classic and Constructivist Grounded Theory advocate picking an interesting site to see “What's going on here?” 
 
 \subsection{Data Collection}
-This research study analyses data from three sources: 1) interviews with Pivotal employees, 2) participant observation of \numberOfObservedProjects{} projects over two years, and 3) topics discussed in 91 retrospection meetings. 
+This research study analyses data from three sources: 1) interviews with Pivotal employees, 2) participant observation of \numberOfObservedProjects{} projects over \durationOfResearchStudyPlural{}, and 3) topics discussed in 91 retrospection meetings. 
 
 For this grounded theory study, the two primary data sources were field notes collected during continuous participant observations of a seven-month project and interviews with Pivotal software engineers, interaction designers, and product managers.
 
@@ -49,52 +49,57 @@ While exploring new emergent core categories, whenever possible, subsequent inte
 \subsubsection{Participant Observation}
 Field notes were collected while working as an engineer on \numberOfObservedProjects{} projects. These notes describe individual and collective actions, capture what participants found interesting or problematic, and include anecdotes and observations.
 
-To preserve client confidentiality, we can only reveal limited information about each project:
+Projects are de-identified to preserve client confidentiality:
 \begin{itemize}
-\item Project Unum (one product manager, four developers) was a greenfield project providing a web front end for installation, configuring, and using a multi-node cluster with big data tools. 
+\item Project Unum (two product managers, four developers) was a greenfield project providing a web front end for installing, configuring, and using a multi-node cluster with big data tools. 
 \item Project Duo (two interaction designers, two product managers, six developers) added features to a print-on-demand e-commerce platform. 
 \item Project Tes (one interaction designer, one product manager, six developers) added features to management software for internet service providers.
-\item Project Quattuor (two interaction designers, three product managers, 28 developers) developed two mobile applications and a backend system for controlling expensive equipment. Project Quattuor  was a greenfield project integrating with seven existing systems. 
+\item Project Quattuor (two interaction designers, three product managers, 28 developers) developed two mobile applications and a backend system for controlling expensive equipment.
 \item Project Kvin (one interaction designer, one product manager, six developers) was a greenfield project for a healthcare startup. 
 \item Project Ses (two interaction designers, one product manager, ten developers) was adding features and removing technical debt to an existing internet e-commerce website.
 \item Project Septem (two interaction designers, three product managers, twelve developers) was adding features and removing technical debt to an existing virtual machine management software.
-\item Project Octo (one product manager, four developers) added features for  workload management of a multi-node database.
+\item Project Octo (one product manager, four developers) added features for workload management of a multi-node database.
 \end{itemize}
+
 
 
 \subsubsection{Retrospection Topics}
 When \textit{removing waste} emerged as one of the core categories from interviews and participant observation, we began collecting data from retrospection meetings. A retrospection meeting (or retro) is a meeting to pause, reflect, and discuss the work done during the week, i.e., a safe place where any team member can discuss any issue \cite{DerbyAgileRetrospectives}. Retros are typically scheduled every Friday afternoon. The entire team and important stakeholders attend these meetings. 
 
-The observed Pivotal teams mostly use an emotion-based retro format where \quotes{happy,} \quotes{meh,} and \quotes{sad} faces are written on the top of a whiteboard. The happy-face column represents items that are working well, of which the team wants to do more. The meh-face column represents  items that the team needs to \quotes{keep an eye on.} The sad-face column represents items that need improving, which the team should try to fix. Any team member can add any topic to any column. After a few minutes, the team dot-votes on the topics to discuss \cite{DerbyAgileRetrospectives}. The team uses the remainder of the sixty-minute meeting to discuss topics. Sometimes discussing a topic is sufficient to affect change, other times the team creates action items. 
+The observed Pivotal teams mostly use an emotion-based retro format where \quotes{happy,} \quotes{neutral,} and \quotes{sad} faces are written on the top of a whiteboard. The happy-face column represents items that are working well and should be continued or expanded. The neutral-face column represents items that the team needs to \quotes{keep an eye on.} The sad-face column represents problems that the team should try to fix. Any team member can add any topic to any column. After a few minutes, the team dot-votes on the topics to discuss \cite{DerbyAgileRetrospectives}. The team uses the remainder of the sixty-minute meeting to discuss topics. Sometimes discussing a topic is sufficient to affect change, other times the team creates action items. 
 
 We collected data from 91 retrospection meetings over 59 weeks from Projects Quattuor, Kvin, and Ses. (There are more meeting than weeks since each of Project Quattuor's three teams held its own retro each week.)
 
-For co-located teams, a whiteboard picture taken at the end of the retro was later transcribed into a master spreadsheet. For distributed teams, we copied data from the on-line spreadsheets the team used in place of a whiteboard. Attendees often wrote a short phrase as a proxy for a larger idea. For example, \quotes{Scope} represents \quotes{Too much scope is causing the team stress} or \quotes{Legal} represents \quotes{Waiting on legal to approve the legal web pages.} When the provided topic was too vague, we solicited a more detailed description from an engineer present in the meeting. This produced 663 total items for analysis. 
+
+For co-located teams, a whiteboard picture was taken at the end of the retro and the topics were later transcribe into a master spreadsheet. For distributed teams, we copied data from the online spreadsheets the team used in place of a whiteboard. Attendees often wrote a short phrase as a proxy for a larger idea (e.g.,  \quotes{Scope} represents \quotes{Too much scope is causing the team stress}). When the provided topic was too vague, we solicited a more detailed description from an engineer that was present at the meeting. This produced 663 total items for analysis. 
+
 
 \subsection{Data Analysis}
 Data analysis began by iteratively collecting and analyzing interview transcripts and participant observations. We used line-by-line coding \cite{Charmaz} to identify nuanced interactions in the data and avoid jumping to conclusions. We reviewed the initial codes while reading the transcripts and listening to the audio recordings.  We discussed the coding during weekly research collaboration meetings. To avoid missing insights from these discussions \cite{GlaserTheoreticalSensitivity}, we recorded and transcribed them into grounded theory memos. As data was collected and coded, we stored initial codes in a spreadsheet and we used constant comparison to generate focused codes.
 
 We routinely compared new codes to existing codes to refine codes and eventually generate categories. We periodically audited each category for cohesion by comparing its codes. When this became complex, we printed codes on index cards, and then arranged and re-arranged until cohesive categories emerged. We wrote memos to capture the analysis of codes, examinations of theoretical plausibility, and insights.
 
-\begin{table}[t]
-\renewcommand{\arraystretch}{1.5}
+\begin{figure}[t]
 \centering
-\captionof{figure}{Example Retro Topic Index Card }
+\fbox{\includegraphics[width=3in]{waste_images/retro_index_card.png}}
+\caption{Example Retro Topic Index Card}
 \label{exampleRetroTopicl}
-\begin{tabular}{|l|}
-\hline
-Topic: Legal \\ \\ Description: Waiting on Legal to approve legal pages \\ \\ Id: 182 Project: Quattour\\ \hline
-\end{tabular}
-\end{table}
+\end{figure}
 
+ When \textit{removing waste} appeared as a core category, we analyzed data from retrospectives to investigate (theoretical sampling). After removing irrelevant topics (e.g. complaints about the weather), we printed each retro item onto an index card with its original retro topic, enhanced description, ID, and team name (see Figure \ref{exampleRetroTopicl}).
 
-When \textit{team code ownership} appeared as a core category, we adapted the interviews to explore this topic for theoretical sampling. When \textit{removing waste} appeared as a core category, we began collecting and analyzing data from retrospectives to investigate for theoretical sampling. After removing irrelevant topics (e.g. complaints about the weather), we printed each retro item onto an index card with its original retro topic, enhanced description, id, and team name (see Figure \ref{exampleRetroTopicl}).
+Two researchers with first-hand experience of the projects coded the retro topics and merged duplicate topics. We iteratively reorganized categories, keeping similar items together and dissimilar items apart. Figure \ref{ChainOfEvidence} gives an example classification for the \textit{psychological distress} waste. The figure shows the waste category, its cause categories and properties, and examples of observed retrospective topics illustrating the waste.  Appendix \ref{AppendixChainOfEvidence} presents the entire chain of evidence for all waste categories.
 
-Over the course of two days, two researchers with first-hand experience of the projects did initial coding of the retro topics and merged duplicate topics. We rearranged initial coding categories to be near similarly themed categories and iteratively combined and reorganized categories (see Table \ref{ChainOfEvidence} for example classification). We often stopped to record new insights. When the categories began to stabilize, we compared each category against the other categories looking for relationships. Once we felt that the categories were stable, we performed a final review of each category to verify that the cards belonged to it. 
+We often stopped to record new insights. When the categories began to stabilize, we compared each category against the other categories looking for relationships. Once we felt that the categories were stable, we performed a final review of each category to verify that the cards belonged to it.
 
-We continued theoretical sampling for team code ownership and removing waste in additional interviews and participant observations until no further waste-related categories were evident, i.e. theoretical saturation. 
+We continued theoretical sampling for team code ownership and removing waste in additional interviews and participant observations until no further categories were evident, i.e. theoretical saturation. 
 
 In summary, the data advanced from the initial codes to focused codes, focused codes to core categories, and core categories to an emergent theory. 
+
+
+
+
+
 
 
 
