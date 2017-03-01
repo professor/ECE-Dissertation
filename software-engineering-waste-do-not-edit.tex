@@ -1,4 +1,3 @@
-
 \chapter{Removing Waste}
 \label{SoftwareEngineeringWasteChapter}
 \section{Summary}
@@ -123,24 +122,6 @@ Several studies applied Value Stream Mapping to software development. Value Stre
 
 Chapter \ref{ResearchMethodChapter} described the research method. Once \textit{removing waste} emerged as a core category, we collected and analyzed data from retrospection meetings. We continued theoretical sampling for removing waste in additional interviews and participant observations until no further waste-related categories were evident, i.e. theoretical saturation. 
 
-% We used Constructivist Grounded Theory \cite{Charmaz}, which involves iteratively collecting and analyzing data to generate and refine an emergent theory. We began by asking, \quotes{What is happening at Pivotal Labs when it comes to software development?} This led to the \textit{Theory of Sustainable Software Development} \cite{SedanoSustainableSoftware} and two further core categories: \textit{Team Code Ownership} \cite{SedanoTeamCodeOwnership} and \textit{Removing Waste}, the topic of this chapter.
-
-% Initially, the two primary data sources were participant observation field notes and interviews with Pivotal software engineers, interaction designers, and product managers. Interviews were recorded, transcribed, coded, and analyzed using constant comparison. The data advanced from initial codes to focused codes, focused codes to core categories.
-
-% When \textit{Removing Waste} emerged as a core category, we incorporated data from retrospection meetings, performed additional interviews, and continued participant observation to refine the category.  We constantly compared emerging findings to data from these three data sources until reaching saturation, as described below.
-
-\subsection{Research Context: Pivotal Labs}
-We selected Pivotal Labs as the research context because it is a successful software engineering organization, interested in using and evolving extreme programming, and open to research collaboration. 
-
-Pivotal Labs is a division of Pivotal\textemdash a large American software company (with 17 offices around the world). Pivotal Labs provides teams of agile developers, product managers, and interaction designers to other firms. Its mission is not only to deliver highly-crafted software products but also to help transform clients' engineering cultures. To change the client's development process, Pivotal combines the client's software engineers with Pivotal's engineers at a Pivotal office where they can experience Extreme Programming \cite{BeckExtremeProgramming2004} in an environment conducive to agile development. 
-
-Typical teams include six software engineers, one interaction designer, and a product manager. The largest project in the history of the Palo Alto office had 28 developers while the smallest had two. Larger projects are organized into smaller coordinating teams with one product manager per team and one or two interaction designers per team.
-
-Interaction designers identify user needs predominately through user interviews; create and validate user experience with mockups; determine the visual design of a product; and support engineering during implementation. Product managers are responsible for identifying and prioritizing features, converting features into stories, prioritizing stories in a backlog, and communicating the stories to the engineers. Software engineers implement the solution. 
-
-Pivotal Labs has practiced Extreme Programming \cite{BeckExtremeProgramming2004} since the late 1990s. While each team autonomously decides what is best for each project, the company culture strongly suggests following all of the core practices of Extreme Programming, including pair programming, test-driven development, refactoring, weekly retrospectives, daily stand-ups, a prioritized backlog, and team code ownership. 
-
-We only observed teams at Pivotal Labs. Other teams, especially teams in other divisions, might have a different culture and follow different software practices.
 
 
 \begin{table}[ht]
@@ -298,7 +279,7 @@ Another way to increase system complexity is through a lack of reuse, i.e., buil
 
 On Project Duo, the interaction designer created a left-to-right navigational flow for configuring the product but designed a top-to-bottom navigational flow for the checkout page. Both sequences allowed the user to change a previous choice, jump to the correct page, and invalidate dependent information. In retrospect, using the same interaction design treatment for both would have been faster. 
 
-On Project Quattuor, multiple interaction designers produced different design treatments for the same concept. The product shipped multiple versions of layouts, lists, alerts, and buttons, some with expensive interactions to delight users. 
+On Project Quattuor, multiple interaction designers produced different design treatments for the same concept. The product shipped multiple versions of layouts, lists, alerts, and buttons. In some cases the team implemented expensive interactions to delight users but the interactions were not reused. 
 
 On Project Kvin, the interaction designer created two sets of form inputs which necessitated multiple CSS styles for the HTML form input tags. Singular designs require engineering to build unique solutions with no possibility of reuse.   
 
@@ -478,6 +459,7 @@ psychological distress, waiting/multitasking, knowledge loss, and ineffective co
 Our taxonomy emerged from a Constructivist Grounded Theory study, including the collection and analysis of data from \durationOfResearchStudyPlural{} of participant-observation of  \numberOfObservedProjects{} software development projects; interviews of \numberOfInterviews{} software engineers, interaction designers, and product managers; as well as one year of retrospection topics. The analysis of the retrospection topics reveals that the observed Pivotal teams care deeply about finding and eliminating waste in their software development processes. 
 
 While this research supports parts of the Lean Software Development waste taxonomy, it differs in three key ways: 1) it introduces four new waste categories: \textit{unnecessarily complex solutions,} \textit{extraneous cognitive load,} \textit{psychological distress,} and \textit{ineffective communication}; 2) it does not support Lean Software Development's \textit{handoffs} waste category; and 3) its waste categories are largely broader than Lean Software Development's categories. As such, our taxonomy is more expressive and more accurately describes the observed data. To be clear, the Lean Software Development's taxonomy of wastes was developed top-down, by mapping manufacturing wastes onto software development concepts. It was not empirically tested and therefore does not have the same epistemic status as our taxonomy, which was developed bottom-up from rigorous primary data collection and analysis. 
+
 
 
 
