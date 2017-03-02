@@ -1,14 +1,33 @@
 % Sample apostrophy's to remove team's 
 
+\newpage
+\section*{Abstract}
+\textit{Context:} Software development is a complex socio-technical endeavor that involves coordinating different disciplines and skill sets. Practitioners experiment with and adopt processes and practices with a goal of making their work more effective.
+
+\textit{Objective:} The purpose of this research is to observe, describe, and analyze software development processes and practices in an industrial setting. Our goal is to generate a descriptive theory of software engineering development, which is rooted in empirical data.
+
+\textit{Method:} Following Constructivist Grounded Theory, we conducted a two-year five-month participant-observation of \numberOfObservedProjects{} software development projects at Pivotal, a software development company. We interviewed \numberOfInterviews{} software engineers, interaction designers, and product managers, and analyzed one year of retrospection topics. We iterated between data collection, data analysis and theoretical sampling until achieving theoretical saturation and generating a theory for understanding.
+
+\textit{Results:} 1) This research introduces a descriptive theory of Sustainable Software Development. The theory encompasses principles, policies, and practices aiming at removing knowledge silos and improving code quality (including discoverability and readability), hence leading to development sustainability. 2) At the heart of Sustainable Software Development is team code ownership. This research widens the current definition and understanding of team code ownership. It identifies five factors that affect ownership. Developers achieve higher team code ownership when they understand the system context, have contributed to the code in question, perceive code quality as high, believe the product will satisfy the user needs, and perceive high team cohesion. 3) This research introduces the first evidence-based waste taxonomy, identifying \numberOfWastes{} wastes along with causes and tensions within wastes. It also provides a comparison with the taxonomy of wastes found in Lean Software Development.
+
+\textit{Limitations:} While the results are highly relevant to the observed company, Pivotal, the outcomes might not apply to organizations with different software development cultures.
+
+\textit{Conclusion:} The Sustainable Software Development theory refines and extends our understanding of Extreme Programming by adding new principles, policies, and practices (including Overlapping Pair Rotation) and aligning them with the business goal of sustainability. One key aspect of the theory is team code ownership, which is rooted in numerous cognitive, emotional, contextual and technical factors and cannot be achieved simply by policy. Another key dimension is waste identification and elimination, which has led to a new taxonomy of waste. Comparing this taxonomy to Lean Software Development's list of wastes revealed our taxonomy's parsimony and expressiveness while illustrating wastes not covered by previous work. Overall, this research contributes to the field of software engineering by providing new insights, rooted in empirical data, into how a software organization leverages and extends Extreme Programming to achieve software sustainability.
+
+
+
+
+
+
 
 \chapter{Introduction}
 \label{IntroductionChapter}
 
-Imagine that you are a Vice President of a multi-million dollar software development business unit managing 100 software engineers and 20 product managers. You have 25 teams working on various interrelated software products. The entire organization balances 1) adding new features to the next release, 2) solving customer escalations from installed products, and 3) handling maintenance chores such as routinely upgrading technology dependencies. Over the last few releases, you have seen a continuing decrease in your teams’ productivity, and a steep increase in complaints from customers related to product quality. And somehow, there is never enough time to address those challenges.
+Imagine that you are a Vice President of a multi-million dollar software development business unit managing 100 software engineers and 20 product managers. You have 25 teams working on various interrelated software products. The entire organization balances 1) adding new features to the next release, 2) solving customer escalations from installed products, and 3) handling maintenance chores such as routinely upgrading technology dependencies. Over the last few releases, you have seen a continuing decrease in your teams' productivity, and a steep increase in complaints from customers related to product quality. And somehow, there is never enough time to address those challenges.
 
 In the middle of all this, one team is extremely difficult  to manage. The team is composed of highly skilled software engineers. They write well tested, clean code. The test suite is slow, but is thorough and catches issues before they get to the customer. 
 
-The team resists collaborating with other teams or customers. The team developed an \quotes{us versus them} or \quotes{us versus management} attitude. Their product manager would like the team to be in the office more often to increase collaboration. While the organization expects teams to be in the office during core business hours, this team believes that as long as the work gets done, nobody should care where or when they accomplish the work. The product manager is growing frustrated with the team’s attitude about features. Their focus appears to be on delivering something that works without truly understanding how the features should work. As a result, when they deliver code, the implementation does not always solve the customer’s needs or works the way the customer expects. 
+The team resists collaborating with other teams or customers. The team developed an \quotes{us versus them} or \quotes{us versus management} attitude. Their product manager would like the team to be in the office more often to increase collaboration. While the organization expects teams to be in the office during core business hours, this team believes that as long as the work gets done, nobody should care where or when they accomplish the work. The product manager is growing frustrated with the team's attitude about features. Their focus appears to be on delivering something that works without truly understanding how the features should work. As a result, when they deliver code, the implementation does not always solve the customer's needs or works the way the customer expects. 
 
 How did software development come to this? Why is software development so hard? Why is collaboration so difficult? How can we build teams that embrace collaboration, help others solve the problems, and train others to do their work?
 
@@ -18,15 +37,15 @@ While it appears that any set of processes will work for tiny teams in the short
 
 In order to understand how Pivotal develops software, we employed Constructivist Grounded Theory as the research method. Chapter \ref{ConstructivistGroundedTheoryChapter} describes Constructivist Grounded Theory and Chapter \ref{ResearchMethodChapter} describes our data sources and particular use of Grounded Theory. This study had an unusually ambitious scope. In many Grounded Theory studies, the researcher spends a few weeks interviewing participants and analyzing data. Here, one researcher spent \durationOfResearchStudyPlural{} working with participants 5 days per week on \numberOfObservedProjects{} teams. 
 
-Applying Grounded Theory at Pivotal unearthed the theory of Sustainable Software Development, an explanation on how Pivotal teams can thrive despite team disruption and successfully deliver software to their stakeholders. Chapter \ref{SustainableSoftwareDevelopmentChapter} describes the theory’s principles, policies, and practices. The theory explains how teams survive disruption by actively removing knowledge silos and caretaking the code. At the heart of the Pivotal process is team code ownership. Many of Pivotal’s practices have the effect of promoting team code ownership while removing individual code ownership. Chapter \ref{TeamCodeOwnershipChapter} identifies five factors that affect the team’s sense of code ownership and explains why psychological ownership causes some engineers to struggle with the transition from individual code ownership to team code ownership. 
+Applying Grounded Theory at Pivotal discovered the theory of Sustainable Software Development, an explanation on how Pivotal teams can thrive despite team disruption and successfully deliver software to their stakeholders. Chapter \ref{SustainableSoftwareDevelopmentChapter} describes the theory's principles, policies, and practices. The theory explains how teams survive disruption by actively removing knowledge silos and caretaking the code. At the heart of the Pivotal process is team code ownership. Many of Pivotal's practices have the effect of promoting team code ownership while removing individual code ownership. Chapter \ref{TeamCodeOwnershipChapter} identifies five factors that affect the team's sense of code ownership and explains why psychological ownership causes some engineers to struggle with the transition from individual code ownership to team code ownership. 
 
-The Grounded Theory study also identified that Pivotal teams actively detect and remove waste. Since software development is an organic and messy problem space, finding all kinds of waste is no surprise. Chapter \ref{SoftwareEngineeringWasteChapter} conducts the first empirical research study into a waste taxonomy and contrasts it with Lean Software Development’s waste taxonomy. Some of the wastes types are rarely salient unless one is specifically looking for them.
+The Grounded Theory study also identified that Pivotal teams actively detect and remove waste. Since software development is an organic and messy problem space, finding all kinds of waste is no surprise. Chapter \ref{SoftwareEngineeringWasteChapter} conducts the first empirical research study into a waste taxonomy and contrasts it with Lean Software Development's waste taxonomy.
 
 Chapter \ref{ConclusionChapter} discusses future research and concludes the research study. 
 
 Appendix \ref{AppendixChainOfEvidence} provides the chain of evidence for the waste taxonomy after iteratively applying constant comparison. 
 
-Appendix \ref{AppendixInterviews} showcases interview data. The initial interviews began with the question, \quotes{draw your view of Pivotal’s software development process.} The appendix includes a sample of these drawings with interview transcript snippets where the interviewee describes the drawing. Once team code ownership emerged as a core category, many interviews began with the question, \quotes{draw how you feel about the code.} Section \ref{AppendixFeelAboutTheCode} provides some of these drawings. When the pictures are not obvious, a brief narrative explains the illustration.
+Appendix \ref{AppendixInterviews} showcases interview data. The initial interviews began with the question, \quotes{draw your view of Pivotal's software development process.} The appendix includes a sample of these drawings with interview transcript snippets where the interviewee describes the drawing. Once team code ownership emerged as a core category, many interviews began with the question, \quotes{draw how you feel about the code.} Section \ref{AppendixFeelAboutTheCode} provides some of these drawings. When the pictures are not obvious, a brief narrative explains the illustration.
 
 % opportunities to remove waste are apparent even for companies that actively remove waste. 
 
@@ -37,12 +56,12 @@ Kent Beck invented Extreme Programming while running the Chrysler payroll softwa
 
 Extreme programming balances business needs of repeatedly and reliably delivering software with the human needs of the participants. Extreme Programming is characterized by a set of values, principles, and practices. When transitioning a team to Extreme Programming, Beck recommends first adopting the primary practices. 
 \section{Values}
-Values help guide a team. Values remind a team why they do certain practices. Without values, a team might \quotes{cargo-cult} a practice (e.g. continue to religiously follow a practice without understanding why they follow it.) Beck says \quotes{values are the roots of the things we like and don’t like in a situation} \cite{BeckExtremeProgramming2004}/ Values are abstract concepts, and hard to observe, whereas it is much easier to examine if a team is following a practice. \quotes{Practices are evidence of value \ldots Just as values bring purpose to practices, practices bring accountability to values} \cite{BeckExtremeProgramming2004}.
+Values help guide a team. Values remind a team why they do certain practices. Without values, a team might \quotes{cargo-cult} a practice (e.g. continue to religiously follow a practice without understanding why they follow it.) Beck says \quotes{values are the roots of the things we like and don't like in a situation} \cite{BeckExtremeProgramming2004}/ Values are abstract concepts, and hard to observe, whereas it is much easier to examine if a team is following a practice. \quotes{Practices are evidence of value \ldots Just as values bring purpose to practices, practices bring accountability to values} \cite{BeckExtremeProgramming2004}.
 
 \textbf{Communication:} Extreme programming is a collaborative endeavor with frequent communication. Teams prefer open and transparent communication. 
 \quotes{You can listen to people who have had similar problems in the past} \cite{BeckExtremeProgramming2004}. When combined with the reflective principle, the team can ask \quotes {what communication do you need to keep yourself out of this trouble in the future?} \cite{BeckExtremeProgramming2004}
 
-\textbf{Simplicity:} Teams prefer simpler solutions to more complex solutions. Teams strive to \quotes{make a system simple enough to gracefully solve only today’s problem} \cite{BeckExtremeProgramming2004}. Simpler solutions often take more work to discover and implement than complex solutions, but simpler solutions often require less communication than complex solutions.
+\textbf{Simplicity:} Teams prefer simpler solutions to more complex solutions. Teams strive to \quotes{make a system simple enough to gracefully solve only today's problem} \cite{BeckExtremeProgramming2004}. Simpler solutions often take more work to discover and implement than complex solutions, but simpler solutions often require less communication than complex solutions.
 
 
 
@@ -52,14 +71,14 @@ Values help guide a team. Values remind a team why they do certain practices. Wi
 
 \textbf{Courage:} \quotes{Courage is effective action in the face of fear}   \cite{BeckExtremeProgramming2004}. Sometimes it takes courage to make the needed change. Messy code will remain messy unless a programmer demonstrates courage to improve it. Individuals consider the consequences before making a change. With change, the team accepts the risk of unintended consequences (e.g. the tests fail.) When the team knows the problem, courage is a bias to action. When the team does not know the underlying problem, courage may simply be patience. 
 
-\textbf{Respect:} Collaborative software development is founded on respect. Team members decide to respect each other. \quotes{If members of a team don’t care about each other and what they are doing, XP won’t work} \cite{BeckExtremeProgramming2004}.
+\textbf{Respect:} Collaborative software development is founded on respect. Team members decide to respect each other. \quotes{If members of a team don't care about each other and what they are doing, XP won't work} \cite{BeckExtremeProgramming2004}.
 
 \textbf{Others:} Teams may adopt additional values and align their practices around the values. 
 
 \section{Principles}
 The principles help guide a team in implementing the values. When two potential practices achieve the same value,  the principles guide the team. Beck shows that both documentation and daily conversations satisfy the need of communication, yet the principle of humanity reminds that daily communication satisfies the psychological need of human connection \cite{BeckExtremeProgramming2004}.
 
-\textbf{Humanity:} The practices that a team follows need to satisfy human needs. Alternative software development practices may not respect psychological needs. A practice may grind away at an individual’s humanity \cite{BeckExtremeProgramming2004}. Beck lists fundamental human needs as basic safety, accomplishment, belonging, growth, and intimacy \cite{BeckExtremeProgramming2004}. Team software development balances the needs of the individual with the needs of the team. 
+\textbf{Humanity:} The practices that a team follows need to satisfy human needs. Alternative software development practices may not respect psychological needs. A practice may grind away at an individual's humanity \cite{BeckExtremeProgramming2004}. Beck lists fundamental human needs as basic safety, accomplishment, belonging, growth, and intimacy \cite{BeckExtremeProgramming2004}. Team software development balances the needs of the individual with the needs of the team. 
 
 \textbf{Economics:} The practices that a team follows need to balance business needs with technical needs\quotes. People buying the product fuels the business. \quotes{Software development is more valuable when it earns money sooner and spends money later} \cite{BeckExtremeProgramming2004}. Incremental design and incremental delivery allow the team to release earlier and delay expenses until later. Teams avoid building the illusive \quotes{perfect} product.
 
@@ -82,13 +101,13 @@ The principles help guide a team in implementing the values. When two potential 
 
 % The team needs to continue in spite of team disruption. Spreading knowledge around the team helps it survive through churn. This enables people to go on vacation whenever needed.
 
-\textbf{Failure:} The practices that a team follows bias a team towards action. When the team does not know what to do, try something and get feedback. \quotes{If you’re having trouble succeeding, fail} \cite{BeckExtremeProgramming2004}. Sometimes replacing lengthy conversation and debate with trying multiple ideas produces less waste.
+\textbf{Failure:} The practices that a team follows should bias a team towards action. When the team does not know what to do, try something and get feedback. \quotes{If you're having trouble succeeding, fail} \cite{BeckExtremeProgramming2004}. Sometimes replacing lengthy conversation and debate with trying multiple ideas produces less waste.
 
 \textbf{Quality:} The practices a team follows should deliver high-quality products. Increases in quality \quotes{leads to improvements in other desirable project properties, like productivity and effectiveness} \cite{BeckExtremeProgramming2004}. Beck argues that short-changing quality is not a way to make a project go faster. 
 
-\textbf{Baby Steps:} The practices a team follows need to prefer small incremental changes. Start with the simplest smallest change possible and iterate from there. Decompose significant changes into small incremental changes. Beck often asks, \quotes {what’s the least you could do that is recognizably in the right direction?} \cite{BeckExtremeProgramming2004}. 
+\textbf{Baby Steps:} The practices a team follows need to prefer small incremental changes. Start with the simplest smallest change possible and iterate from there. Decompose significant changes into small incremental changes. Beck often asks, \quotes {what's the least you could do that is recognizably in the right direction?} \cite{BeckExtremeProgramming2004}. 
 
-\textbf{Accepted Responsibility:} The practices a team follows favors empowering people working on a problem the authority to solve it. Responsibility is accepted, not assigned. Avoid the situation where people in one part of the organization are telling others what to do. 
+\textbf{Accepted Responsibility:} The practices a team follows should empower the people working on a problem with the authority to solve it. Responsibility is accepted, not assigned. Avoid the situation where people in one part of the organization are telling others what to do. 
 
 \section{Primary Practices}
 For a team transitioning to Extreme Programming, Beck recommends starting with the primary practices. Beck claims that \quotes{the primary practices are useful independent of what else you are doing} resulting in an immediate improvement, whereas the corollary practices work well once a team has implemented the primary practices. Extreme programming is not dogmatic about the list of practices. The team chooses which practices to apply.
@@ -104,7 +123,7 @@ For a team transitioning to Extreme Programming, Beck recommends starting with t
 
 %Synchronous communication enables a high bandwidth conversation, where participants can quickly discuss and iterate on a topic. Asynchronous communication (e.g. email or instant messaging) introduces delays in responses, context switching, the overhead of preparing a message, and increased opportunities for messages to be misunderstood. Co-locating the team into the same aisle increases the opportunities for synchronous communication and impromptu team huddles.  Co-located teams typically have greater verbal and nonverbal communication compared to distributed teams. Daily standups provide inexpensive touch points for the team to synchronize and resolve issues. Teams prefer synchronous communication over asynchronous communication. 
 
-\textbf{Whole Team:} Whole team is also known as cross-functional teams. Include people on the team with the skills needed for success. Beck points out that a sense of team fulfills an individual’s psychological needs. \quotes{We belong. We are in this together. We support each others’ work, growth, and learning.} \cite{BeckExtremeProgramming2004}
+\textbf{Whole Team:} Whole team is also known as cross-functional teams. Include people on the team with the skills needed for success. Beck points out that a sense of team fulfills an individual's psychological needs. \quotes{We belong. We are in this together. We support each others' work, growth, and learning.} \cite{BeckExtremeProgramming2004}
  
 %The entire team is responsible for the success of the project, and thus is empowered to make decisions to get it done.
 
@@ -115,7 +134,7 @@ For a team transitioning to Extreme Programming, Beck recommends starting with t
 
 \textbf{Energized Work:} \quotes{Work only as many hours as you can be productive and only as many hours as you can sustain} \cite{BeckExtremeProgramming2004}. Working longer hours may make the team less productive. Team members need to take care of themselves; this includes staying home to rest when sick. The work patterns of the team should be sustainable in the long run.
 
-\textbf{Pair Programming:} Every part of a production system is written by two programmers sitting side by side. The pair works together to solve problems, keep each other on task, learn from each other, and abide by the team’s practices.
+\textbf{Pair Programming:} Every part of a production system is written by two programmers sitting side by side. The pair works together to solve problems, keep each other on task, learn from each other, and abide by the team's practices.
 
 % Two engineers use one computer with two monitors, two keyboards, and two mice to implement each story. Ideally, the two enter into a state of flow where, at the end of the day, no one knows who wrote what. No individual ownership.
 
@@ -123,12 +142,12 @@ For a team transitioning to Extreme Programming, Beck recommends starting with t
 
 % The product manager decomposes a product into features and decomposes features into stories. Stories describe how the user interacts with the system.  Stories represent the unit of work to be done. Stories have acceptance criteria. 
 
-\textbf{Weekly Cycle:} Each week, the team accepts a certain amount of work to accomplish. During a meeting at the beginning of the week, the team reviews progress to date, the customer chooses a week’s worth of stories, and the engineers decompose the stories into tasks and individually estimate each task. \quotes{The goal is to have deployable software at the end of the week which everyone can celebrate as progress}  \cite{BeckExtremeProgramming2004}. 
+\textbf{Weekly Cycle:} Each week, the team accepts a certain amount of work to accomplish. During a meeting at the beginning of the week, the team reviews progress to date, the customer chooses a week's worth of stories, and the engineers decompose the stories into tasks and individually estimate each task. \quotes{The goal is to have deployable software at the end of the week which everyone can celebrate as progress}  \cite{BeckExtremeProgramming2004}. 
 
 % each engineer picks up a set of stories for the week. Engineers only estimate their stories to verify that they have enough capacity to accomplish the work for the week. Slack keeps slack for unforeseen circumstances.
 
 
-\textbf{Quarterly Cycle:} Each quarter, the team identifies the stories for the next quarter.  During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter’s worth of stories. 
+\textbf{Quarterly Cycle:} Each quarter, the team identifies the stories for the next quarter.  During a meeting, the team identifies bottlenecks, initiates repairs, plans the feature sets for the quarter, and selects a quarter's worth of stories. 
 
 % Each quarter, the team manager i. The product manager prioritizes the stories. The team plans for which features to implement during the next quarter.  A product roadmap is ...
 
@@ -140,7 +159,7 @@ For a team transitioning to Extreme Programming, Beck recommends starting with t
 
 \textbf{Test-First Programming:} The developers write tests before writing code. Every production line of code is preceded by a test.  Test-first programming addresses several concerns: scope-creep,  coupling and cohesion, trust, and rhythm. The practice mitigates against scope-creep; without a clear goal, a programmer can easily write more code than is necessary. The practice improves coupling and cohesion as easy-to-test code often has beneficial design qualities. The practice builds trust in the code as engineers trust tested code more than un-tested code. The practice produces rhythm as it provides a cadence of accomplishing goals.
 
-\textbf{Incremental Design:} Build the system incrementally and evolve the design every day. In the past, software teams might often had long design phases that assumed features would not change. When the team’s understanding of the system changes, make incremental changes to the system to align the code’s design with the team’s desired goal. Teams routinely remove duplication.
+\textbf{Incremental Design:} Build the system incrementally and evolve the design every day. In the past, software teams might often had long design phases that assumed features would not change. When the team's understanding of the system changes, make incremental changes to the system to align the code's design with the team's desired goal. Teams routinely remove duplication.
 
 \section{Corollary Practices}
 Once a team has implemented the primary practices, then the team can start implementing the corollary practices. Beck says that it seems \quotes {difficult or dangerous to implement [the corollary practices] before completing the preliminary work of the primary practices} \cite{BeckExtremeProgramming2004}.
@@ -174,6 +193,13 @@ Once a team has implemented the primary practices, then the team can start imple
 % Write contracts so that the client can re-prioritize the scope at any point in time, thus making the scope flexible.
 
 \textbf{Pay-per-use:} Pay-per-use provides alignment between revenue and the features that generate the revenue. \quotes{Connecting money flow directly to software development provides accurate, timely information with which to drive improvement}  \cite{BeckExtremeProgramming2004}.
+
+\section{Criticism of Extreme Programming}
+An issue with any of the practices typically can be an issue with Extreme Programming. For example, some engineers do not enjoy pair programming as they prefer to work individually. Some engineers prefer to design software that deals with every possible future request. Some engineers prefer not to test their code.
+
+If a team is unable to implement a practice, then it requires modification of Extreme Programming.  Difficulty in locating a customer willing to work with the team means that the team will need to adapt Extreme Programming to fit the team's challenges.  Organizations with distributed teams will need to adapt the practices. Some software development organizations prefer taking on technical debt so that they can ship as early as possible. 
+
+Achieving buy-in with key stakeholders can be challenging. Managers may be skeptical of assigning two development resources to every software story. 
 
 
 \section{Summary}
@@ -224,7 +250,7 @@ This section presents a typical day in the life of a Pivotal software engineer.
 
 Pivotal provides breakfast to promote engineers starting the day at the same time. Many engineers socialize with their coworkers while eating breakfast. 
 
-Office stand-up begins at 9:06 am \cite{BBCPivotal9am}. Everyone gathers around in a large circle. The stand-up covers \quotes{new faces,} \quotes{helps,} \quotes{interestings,} and \quotes{events.} The office stand-up lasts a few minutes. The two people running stand-up send an email to the company with a summary of the brief meeting. People then disperse for their team’s stand-ups.
+Office stand-up begins at 9:06 am \cite{BBCPivotal9am}. Everyone gathers around in a large circle. The stand-up covers \quotes{new faces,} \quotes{helps,} \quotes{interestings,} and \quotes{events.} The office stand-up lasts a few minutes. The two people running stand-up send an email to the company with a summary of the brief meeting. People then disperse for their team's stand-ups.
 
 Team stand-ups provide a synchronization point for the team. Small teams (under eight people) typically will review what each individual accomplished yesterday and discuss any blockers to finishing the work. Large teams discuss \quotes{interestings} and \quotes{helps.} Some teams use a whiteboard to track \quotes{parking lot} issues (items needing discussion during stand-up). After team stand-up, the engineers then decide \quotes{pairing.} For work in progress, each pair decides who will continue with it. The available engineers then re-pair with engineers continuing the work. If a pair has nothing to work on, they take the next story at the top of the backlog. The team then determines which pairs will use which computer. If there is work already in progress on one machine, the pair continues the work on the same machine. The team configures the development environments to be identical on all machines. Pairing continues until 12:30 pm when the team takes a lunch break. After lunch, pairing continues until 6:00 pm. 
 
