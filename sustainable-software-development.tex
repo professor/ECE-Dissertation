@@ -183,7 +183,7 @@ Caretaking the Code Practices & TDD / BDD \newline Continuous Refactoring  \newl
 \section{Theory of Sustainable Software Development}
 \label{SustainableSoftwareDevelopmentTheory}
 
-Sustainable software development refers to the ability and propensity of a software development team to mitigate the negative effects of major disruptions, especially team churn, on its productivity and effectiveness. The theory of Sustainable Software Development, summarized in Table \ref{SustainableSoftwareDevelopmentTable}, is targeted towards software developers and has emerged from the Grounded Theory research described above. We hypothesize that sustainability emerges from synergistic principles, policies, and practices, which collectively explain how the observed Pivotal teams overcome disruption. The ability of any pair to work on any story while caring about the code is the primary mechanism by which these principles, policies, and practices mitigate disruption. 
+Sustainable software development refers to the ability and propensity of a software development team to mitigate the negative effects of major disruptions, especially team churn, on its productivity and effectiveness. The theory of Sustainable Software Development, summarized in Table \ref{SustainableSoftwareDevelopmentTable}, explains how Pivotal teams deliver successful projects despite team disruption. We hypothesize that sustainability emerges from synergistic principles, policies, and practices, which collectively explain how the observed Pivotal teams overcome disruption. The ability of any pair to work on any story while caring about the code is the primary mechanism by which these principles, policies, and practices mitigate disruption. 
 
 This section documents each principle, policy, and practice. For each policy and practice, the sub-section presents how it is used at Pivotal, and discuss anti-patterns and potential alternatives. Deeper descriptions are provided for practices rarely documented in the literature.
 \subsection{Principles}
@@ -200,7 +200,7 @@ The second underlying principle of Sustainable Software Development is encouragi
 
 \subsubsection{Caring about Code Quality}
 
-Enabling knowledge sharing and continuity does not guarantee sustainable development if the team starts incurring technical debt \cite{McConnellTechnicalDebt}. A set of policy and practices aimed at taking good care of the code itself mitigates this risk. The policy is Avoid Technical Debt, while the practices are Test-Driven Development / Behavior-Driven Development and Continuous Refactoring (which are discussed below).
+Enabling knowledge sharing and continuity does not increase the probability of sustainable development if the team starts incurring technical debt \cite{McConnellTechnicalDebt}. A set of policy and practices aimed at taking good care of the code itself mitigates this risk. The policy is Avoid Technical Debt, while the practices are Test-Driven Development / Behavior-Driven Development and Continuous Refactoring (which are discussed below).
 
 The third underlying principle of Sustainable Software Development is caring about code quality, hence avoiding technical debt and enabling sustainable team productivity.
 \subsection{Policies}
@@ -301,7 +301,7 @@ These mechanisms help a team build awareness. Chong observed that \quotes{transm
 \textbf{Anti-pattern:} An organization that provides little opportunity to share knowledge leads to wasted time as developers must acquire the knowledge through other means or end up reinventing the wheel.
 \subsection{Caretaking the Code Practices}
 \subsubsection{Test-Driven Development, Behavior-Driven Development}
-\textbf{Description:} In Test-Driven Development (TDD) developers write unit tests before creating a design and writing code. In Behavior-Driven Development (BDD) developers implement acceptance tests before creating a design and writing code. Most lines of production code are tested before the production code is written. The software's design emerges from the tests and subsequent refactorings.
+\textbf{Description:} In Test-Driven Development (TDD) developers write unit tests before creating a design and writing code. In Behavior-Driven Development (BDD) developers write an automated acceptance tests before creating a design and writing code. Most lines of production code are tested before the production code is written. The software's design emerges from the tests and subsequent refactorings.
 
 In Extreme Programming, Kent Beck describes his corresponding \quotes{Testing} practice as developers writing \quotes{automated unit tests} and implementing customer provided \quotes{functional tests} for story acceptance \cite{BeckExtremeProgramming1999}. Later, he refines these ideas as \quotes{Test-first programming} \cite{BeckExtremeProgramming2004}. 
 
@@ -343,7 +343,7 @@ Charmaz identifies four criteria for evaluating a Grounded Theory: credibility (
 
 \textbf{Credibility:} The current data set is rich and its analysis leads to theory saturation. (Saturation means that the properties of the theory are complete and are not affected by new data.) The data set comprises \numberOfInterviews{} intensive interviews conducted in four different offices, field notes from participant observation on Project Quattuor, and the use of participant-observation on \numberOfObservedProjects{} projects.
 
-\textbf{Originality:} The theory uniquely depicts the principles, policies, and practices enabling software development sustainability in an organization. Since the organization under study follows Extreme Programming, it is not surprising that many of the practices of Sustainable Software Development are defined in Extreme Programming. However, overlapping pair rotation and its supporting principles, policies, and practices are central and unique to the proposed theory.
+\textbf{Originality:} The theory uniquely depicts the principles, policies, and practices enabling software development sustainability in an organization. Since the organization under study follows Extreme Programming, it is not surprising that many of the practices of Sustainable Software Development are defined in Extreme Programming. Overlapping pair rotation and its supporting principles, policies, and practices are central and unique to the proposed theory. The theory explains why Pivotal teams continue to deliver projects despite team disruption. 
 
 \textbf{Resonance:} The participants examined the theory. The theory resonates with their experience and reflects the way they work.
 
@@ -351,14 +351,11 @@ Charmaz identifies four criteria for evaluating a Grounded Theory: credibility (
 
 \section{Threats to Validity}
 
-\subsection{External Validity}
-
-\textbf{Generalizability across situations:} Grounded Theory does not support statistical generalization from a sample to a population. The results may not be applicable to other teams or other domains. There are four broad types of scientific generalization: 1) from data to descriptions, 2) from descriptions to concepts, 3) from concepts to theory, 4) from theory to description \cite{Lee2003generalizing}. Grounded Theory research involves the first three kinds of generalization. Generalizing from a theory tested in one context to descriptions of a new context (the fourth kind of generalization) could be done by the researchers in the new context, on a case-by-case basis. However, we have not attempted to perform any type four generalizations at this time.
-
-\subsection{Internal Validity}
 \textbf{Researcher bias:} A risk of the participant-observer technique is that the researcher may lose perspective and become biased by being a member of the team. An outside observer might see something the researcher missed. This risk was mitigated by recording interviews and having another researcher review the results of the coding process.
 
 \textbf{Prior knowledge bias:} With Grounded Theory, prior knowledge can aid the researcher in looking at interesting research questions or create difficulties by blinding the researcher about possible explanations \cite{GlaserIssues}. This risk was mitigated with another researcher reviewing the coding process. 
+
+\textbf{Generalizability across situations:} Grounded Theory does not support statistical generalization from a sample to a population. The results may not be applicable to other teams or other domains. There are four broad types of scientific generalization: 1) from data to descriptions, 2) from descriptions to concepts, 3) from concepts to theory, 4) from theory to description \cite{Lee2003generalizing}. Grounded Theory research involves the first three kinds of generalization. Generalizing from a theory tested in one context to descriptions of a new context (the fourth kind of generalization) could be done by the researchers in the new context, on a case-by-case basis. However, we have not attempted to perform any type four generalizations at this time.
 
 \section{Conclusions}
 This research introduces a descriptive theory of \quotes{Sustainable Software Development} as a solution to the challenge of software development sustainability for an ever changing workforce. The theory emerged from a Constructivist Grounded Theory research study. By collecting data from \numberOfInterviews{} intensive interviews conducted in four different Pivotal offices, field notes from participant-observation on the Project Quattuor, and the involvement in the \numberOfObservedProjects{} Pivotal projects as participant-observer, the study investigates the research question \quotes{How do the observed teams develop software effectively while overcoming team disruption?}
@@ -367,7 +364,7 @@ The emergent theory is characterized by a collection of synergistic principles, 
 
 Conventional wisdom says that team disruptions should be avoided, and that extensive documentation is needed to prevent knowledge loss during team churn. Unfortunately, documentation often quickly becomes out-of-date and unreliable. The theory positions team code ownership with overlapping pair rotation and knowledge pollination as an alternative and potentially more effective strategy to mitigate against knowledge loss.
 
-The primary benefits to the software developer are the ability to understand the entire system, the ability to work on every story, increased in teaching opportunities to share one's expertise, and more nuanced understanding of the utilized technologies. 
+The primary benefits to the software developer are the ability to understand the entire system, the ability to work on every story, and more nuanced understanding of the utilized technologies. 
 
 The primary benefit to the employer is business agility. The engineering team continues to deliver software week after week, month after month, while surviving cataclysmic events. Things do not fall apart when the superstar developer leaves because features or components are not critically tied to a particular individual. Critical feature work can be parallelized since anyone can work on any feature.  The whole team's talents are leveraged.
 
