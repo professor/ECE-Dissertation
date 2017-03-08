@@ -1,11 +1,11 @@
-% Sample apostrophy’s to remove team’s 
+% Sample apostrophy's to remove team's 
 
 \chapter{Research Method}
 \label{ResearchMethodChapter}
 \label{ResearchMethod}
 
 
-\subsection{Constructivist Grounded Theory}
+\section{Constructivist Grounded Theory}
 
 When deciding which version of Grounded Theory to employ, we selected Constructivist Grounded Theory \cite{Charmaz} because it allows for the recording and transcription of interviews, enables literature review when appropriate in the research process, and builds upon decades of grounded theory research and experience.
 
@@ -16,7 +16,7 @@ As described in Chapter \ref{ConstructivistGroundedTheoryChapter}, Constructivis
 
 In time, \quotes{team code ownership} and \quotes{removing waste} emerged as two of the core categories. Exploring theoretical saturation for team code ownership resulted in the theory of sustainable software development presented in Chapter \ref{SustainableSoftwareDevelopmentChapter} and five factors that affect a team's sense of code ownership presented in Chapter \ref{TeamCodeOwnershipChapter}. Exploring theoretical saturation for removing waste resulted in a taxonomy of software  engineering waste presented in Chapter \ref{SoftwareEngineeringWasteChapter}.
 
-\subsection{Research Context: Pivotal Labs}
+\section{Research Context: Pivotal Labs}
 \label{SustainableSoftwareDevelopmentResearchContext}
 
 Pivotal Labs is a division of Pivotal\textemdash a large American software company (with 17 offices around the world). Pivotal Labs provides teams of agile developers, product managers, and interaction designers to other firms. Its mission is not only to deliver highly-crafted software products but also to help transform clients' engineering cultures. To change the client's development process, Pivotal combines the client's software engineers with Pivotal's engineers at a Pivotal office where they can experience Extreme Programming \cite{BeckExtremeProgramming2004} in an environment conducive to agile development. 
@@ -29,14 +29,14 @@ Commonly utilized technologies include Angular, Android, backbone, iOS, Java, Ra
 
 Pivotal Labs has followed Extreme Programming \cite{BeckExtremeProgramming2004} since the late 1990's. While each team autonomously decides what is best for each project, the company culture strongly suggests following all of the core practices of Extreme Programming, including pair programming, test-driven development, weekly retrospectives, daily stand-ups, a prioritized backlog, and team code ownership. Only  teams at Pivotal Labs were observed. Other teams, especially teams in other divisions, might have a different culture and follow different software practices.
 
-Pivotal is an good research location because: 1) it is successful; 2) it is interesting in its continued use and evolution of extreme programming; 3) it is accessible and cooperative with research. Both Classic and Constructivist Grounded Theory advocate picking an interesting site to see \quotes{What’s going on here?}
+Pivotal is an good research location because: 1) it is successful; 2) it is interesting in its continued use and evolution of extreme programming; 3) it is accessible and cooperative with research. Both Classic and Constructivist Grounded Theory advocate picking an interesting site to see \quotes{What's going on here?}
 
-\subsection{Data Collection}
+\section{Data Collection}
 This research study analyses data from three sources: 1) interviews with Pivotal employees, 2) participant observation of \numberOfObservedProjects{} projects over \durationOfResearchStudyPlural{}, and 3) topics discussed in 91 retrospection meetings. 
 
 For this grounded theory study, the two primary data sources were field notes collected during continuous participant observations of a seven-month project and interviews with Pivotal software engineers, interaction designers, and product managers.
 
-\subsubsection{Interviews}
+\subsection{Interviews}
 The interviewees consisted of \numberOfInterviews{} interaction designers, product managers, and software engineers who had experience with Pivotal's software development process from five different Pivotal offices. Interaction designers identify user needs predominately through user interviews; create and validate user experience with mockups; determine the visual design of a product; and support engineering during implementation. Product managers are responsible for identifying and prioritizing features, converting features into stories, prioritizing stories in a backlog, and communicating the stories to the engineers. Software engineers implement the solution. Participants were not paid for their time. 
 
 We relied on \quotes{intensive interviews,} which are \quotes{open-ended yet directed, shaped yet emergent, and paced yet unrestricted} \cite{Charmaz}. Open-ended questions were used to enter into the participant's personal perspective within the context of the research question. The interviewer attempts to abandon assumptions to better understand and explore the interviewee's perspective. Charmaz \cite{Charmaz} contrasts intensive interviews with informational interviews (collecting facts), and investigative interviews (exposing hidden intentions, practices or policies).
@@ -46,7 +46,7 @@ The initial interviews were open-ended explorations starting with the question, 
 While exploring new emergent core categories, whenever possible, subsequent interviews were initiated with open-ended questions.  For example, when team code ownership emerged as one of the core categories, asking the participant, \quotes{Please draw your feelings about the code} often resulted in conversations about code ownership. The interviews were spread across the duration of the research study. 
 
 
-\subsubsection{Participant Observation}
+\subsection{Participant Observation}
 We collected field notes while the lead researcher worked as an engineer on \numberOfObservedProjects{} projects. These notes describe individual and collective actions, capture what participants found interesting or problematic, and include anecdotes and observations.
 
 Projects are de-identified to preserve client confidentiality:
@@ -63,7 +63,7 @@ Projects are de-identified to preserve client confidentiality:
 
 
 
-\subsubsection{Retrospection Topics}
+\subsection{Retrospection Topics}
 When \textit{removing waste} emerged as one of the core categories from interviews and participant observation, we began collecting data from retrospection meetings. A retrospection meeting (or retro) is a meeting to pause, reflect, and discuss the work done during the week, i.e., a safe place where any team member can discuss any issue \cite{DerbyAgileRetrospectives}. Retros are typically scheduled every Friday afternoon. The entire team and important stakeholders attend these meetings. 
 
 The observed Pivotal teams mostly use an emotion-based retro format where \quotes{happy,} \quotes{neutral,} and \quotes{sad} faces are written on the top of a whiteboard. The happy-face column represents items that are working well and should be continued or expanded. The neutral-face column represents items that the team needs to \quotes{keep an eye on.} The sad-face column represents problems that the team should try to fix. Any team member can add any topic to any column. After a few minutes, the team dot-votes on the topics to discuss \cite{DerbyAgileRetrospectives}. The team uses the remainder of the sixty-minute meeting to discuss topics. Sometimes discussing a topic is sufficient to affect change, other times the team creates action items. 
@@ -74,7 +74,7 @@ We collected data from 91 retrospection meetings over 59 weeks from Projects Qua
 For co-located teams, a whiteboard picture was taken at the end of the retro and the topics were later transcribe into a master spreadsheet. For distributed teams, we copied data from the online spreadsheets the team used in place of a whiteboard. Attendees often wrote a short phrase as a proxy for a larger idea (e.g.,  \quotes{Scope} represents \quotes{Too much scope is causing the team stress}). When the provided topic was too vague, we solicited a more detailed description from an engineer that was present at the meeting. This produced 663 total items for analysis. 
 
 
-\subsection{Data Analysis}
+\section{Data Analysis}
 Data analysis began by iteratively collecting and analyzing interview transcripts and participant observations. We used line-by-line coding \cite{Charmaz} to identify nuanced interactions in the data and avoid jumping to conclusions. We reviewed the initial codes while reading the transcripts and listening to the audio recordings.  We discussed the coding during weekly research collaboration meetings. To avoid missing insights from these discussions \cite{GlaserTheoreticalSensitivity}, we recorded and transcribed them into grounded theory memos. As data was collected and coded, we stored initial codes in a spreadsheet and we used constant comparison to generate focused codes.
 
 We routinely compared new codes to existing codes to refine codes and eventually generate categories. We periodically audited each category for cohesion by comparing its codes. When this became complex, we printed codes on index cards, and then arranged and re-arranged until cohesive categories emerged. We wrote memos to capture the analysis of codes, examinations of theoretical plausibility, and insights.
